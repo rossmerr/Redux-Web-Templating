@@ -1,0 +1,5 @@
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.Templating\bin\Debug\Redux.Web.Templating.dll
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.Templating\bin\Debug\Redux.Web.Templating.pdb
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.Templating\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.Templating\obj\Debug\Redux.Web.Templating.dll
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.Templating\obj\Debug\Redux.Web.Templating.pdb

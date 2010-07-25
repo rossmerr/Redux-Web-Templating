@@ -1,0 +1,13 @@
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Text\bin\Redux.Web.jQuery.Text.dll
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Text\bin\Redux.Web.jQuery.Text.pdb
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Text\bin\Redux.Web.Html.dll
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Text\bin\Redux.Web.jQuery.Flexigrid.dll
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Text\bin\Redux.Web.Templating.dll
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Text\bin\Redux.Web.Html.pdb
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Text\bin\Redux.Web.jQuery.Flexigrid.pdb
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Text\bin\Redux.Web.Templating.pdb
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Text\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Text\obj\Debug\Redux.Web.jQuery.Text.dll
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Text\obj\Debug\Redux.Web.jQuery.Text.pdb
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Text\bin\Redux.Web.jQuery.Jeditable.dll
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Text\bin\Redux.Web.jQuery.Jeditable.pdb

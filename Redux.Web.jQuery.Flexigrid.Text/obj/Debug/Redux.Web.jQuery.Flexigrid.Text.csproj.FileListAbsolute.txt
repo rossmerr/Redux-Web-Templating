@@ -1,0 +1,9 @@
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Flexigrid.Text\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Flexigrid.Text\bin\Debug\Redux.Web.jQuery.Flexigrid.Text.exe
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Flexigrid.Text\bin\Debug\Redux.Web.jQuery.Flexigrid.Text.pdb
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Flexigrid.Text\bin\Debug\Redux.Web.jQuery.Flexigrid.dll
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Flexigrid.Text\bin\Debug\Redux.Web.Templating.dll
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Flexigrid.Text\bin\Debug\Redux.Web.jQuery.Flexigrid.pdb
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Flexigrid.Text\bin\Debug\Redux.Web.Templating.pdb
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Flexigrid.Text\obj\Debug\Redux.Web.jQuery.Flexigrid.Text.exe
+C:\Users\rossmwee\Documents\Visual Studio 2010\Projects\Redux.Web.Templating\Redux.Web.jQuery.Flexigrid.Text\obj\Debug\Redux.Web.jQuery.Flexigrid.Text.pdb

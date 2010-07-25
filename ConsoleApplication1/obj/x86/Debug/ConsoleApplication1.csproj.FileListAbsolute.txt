@@ -1,0 +1,5 @@
+C:\Users\rossmwee\documents\visual studio 2010\Projects\Redux.Web.Templating\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\rossmwee\documents\visual studio 2010\Projects\Redux.Web.Templating\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\rossmwee\documents\visual studio 2010\Projects\Redux.Web.Templating\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\rossmwee\documents\visual studio 2010\Projects\Redux.Web.Templating\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\rossmwee\documents\visual studio 2010\Projects\Redux.Web.Templating\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb

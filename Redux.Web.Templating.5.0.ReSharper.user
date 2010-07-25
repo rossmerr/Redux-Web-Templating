@@ -1,0 +1,768 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/f:FlexigridConfiguration.cs" caret="4613" fromTop="21" />
+      <File id="A5C6F950-2084-4482-9A0F-62A1B38DA64C/d:Views/d:Home/f:Index.aspx" caret="531" fromTop="13" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/d:Properties/f:AssemblyInfo.cs" caret="1500" fromTop="36" />
+      <File id="0C93AD1E-5DD8-4996-BB68-4C0572EC477E/d:Properties/f:AssemblyInfo.cs" caret="1551" fromTop="36" />
+      <File id="816B6CCE-75B5-446E-A648-F21B974E58B7/f:TemplateController.cs" caret="203" fromTop="8" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/f:FlexigridController.cs" caret="590" fromTop="20" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/f:IFlexigridConfiguration.cs" caret="703" fromTop="17" />
+      <File id="816B6CCE-75B5-446E-A648-F21B974E58B7/f:TemplateScript.cs" caret="810" fromTop="27" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/d:Html/f:FlexigridExtension.cs" caret="1577" fromTop="33" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/f:DataTable.cs" caret="558" fromTop="16" />
+      <File id="A5C6F950-2084-4482-9A0F-62A1B38DA64C/d:Views/d:Home/f:Example3.aspx" caret="0" fromTop="0" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/f:FlexigridResult.cs" caret="288" fromTop="10" />
+      <File id="A5C6F950-2084-4482-9A0F-62A1B38DA64C/d:Views/d:Shared/f:Site.Master" caret="774" fromTop="17" />
+      <File id="A5C6F950-2084-4482-9A0F-62A1B38DA64C/d:Views/d:Home/f:Example4.aspx" caret="1172" fromTop="20" />
+      <File id="0C93AD1E-5DD8-4996-BB68-4C0572EC477E/f:JeditableConfiguration.cs" caret="177" fromTop="7" />
+      <File id="0C93AD1E-5DD8-4996-BB68-4C0572EC477E/f:JeditableController.cs" caret="488" fromTop="20" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/f:FlexigridWriter.cs" caret="2471" fromTop="11" />
+      <File id="816B6CCE-75B5-446E-A648-F21B974E58B7/f:Property.cs" caret="548" fromTop="17" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/f:FlexigridRow.cs" caret="416" fromTop="17" />
+      <File id="A5C6F950-2084-4482-9A0F-62A1B38DA64C/d:Views/d:Home/f:Example1.aspx" caret="0" fromTop="0" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/f:FlexigridCell.cs" caret="323" fromTop="10" />
+      <File id="5C801840-C1F1-46FC-84BD-EA52F7BFB9E8/f:Column.cs" caret="245" fromTop="9" />
+      <File id="816B6CCE-75B5-446E-A648-F21B974E58B7/f:IColumn.cs" caret="360" fromTop="9" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/d:Html/f:ControllerExtension.cs" caret="2147" fromTop="30" />
+      <File id="816B6CCE-75B5-446E-A648-F21B974E58B7/f:IDataTableConfiguration.cs" caret="378" fromTop="11" />
+      <File id="0C93AD1E-5DD8-4996-BB68-4C0572EC477E/f:JeditableWriter.cs" caret="1364" fromTop="34" />
+      <File id="A5C6F950-2084-4482-9A0F-62A1B38DA64C/d:Controllers/f:HomeController.cs" caret="3849" fromTop="21" />
+      <File id="0C93AD1E-5DD8-4996-BB68-4C0572EC477E/f:JeditableExtension.cs" caret="1373" fromTop="35" />
+      <File id="0C93AD1E-5DD8-4996-BB68-4C0572EC477E/f:JeditableCell.cs" caret="472" fromTop="19" />
+      <File id="0C93AD1E-5DD8-4996-BB68-4C0572EC477E/f:JeditableColumn.cs" caret="400" fromTop="16" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="5C801840-C1F1-46FC-84BD-EA52F7BFB9E8/f:Column.cs" caret="597" fromTop="16" />
+      <File id="5C801840-C1F1-46FC-84BD-EA52F7BFB9E8/f:Column.cs" caret="2060" fromTop="31" />
+      <File id="816B6CCE-75B5-446E-A648-F21B974E58B7/f:IColumn.cs" caret="836" fromTop="22" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/f:FlexigridCell.cs" caret="321" fromTop="10" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/f:FlexigridCell.cs" caret="170" fromTop="6" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/d:Html/f:ControllerExtension.cs" caret="2206" fromTop="30" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/d:Html/f:ControllerExtension.cs" caret="1979" fromTop="18" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/d:Html/f:ControllerExtension.cs" caret="1784" fromTop="17" />
+      <File id="5C801840-C1F1-46FC-84BD-EA52F7BFB9E8/f:Column.cs" caret="232" fromTop="9" />
+      <File id="0C93AD1E-5DD8-4996-BB68-4C0572EC477E/f:JeditableExtension.cs" caret="1430" fromTop="30" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/d:Html/f:ControllerExtension.cs" caret="1219" fromTop="10" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/d:Html/f:ControllerExtension.cs" caret="1792" fromTop="20" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/d:Html/f:ControllerExtension.cs" caret="2814" fromTop="32" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/d:Html/f:ControllerExtension.cs" caret="2787" fromTop="32" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/d:Html/f:ControllerExtension.cs" caret="2625" fromTop="25" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/d:Html/f:ControllerExtension.cs" caret="905" fromTop="11" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/d:Html/f:ControllerExtension.cs" caret="2630" fromTop="34" />
+      <File id="5C801840-C1F1-46FC-84BD-EA52F7BFB9E8/f:Column.cs" caret="928" fromTop="21" />
+      <File id="816B6CCE-75B5-446E-A648-F21B974E58B7/f:IColumn.cs" caret="554" fromTop="16" />
+      <File id="816B6CCE-75B5-446E-A648-F21B974E58B7/f:IColumn.cs" caret="360" fromTop="9" />
+      <File id="480D4314-462A-4D9A-97B8-CE02F5C919E5/d:Html/f:ControllerExtension.cs" caret="2147" fromTop="30" />
+      <File id="0C93AD1E-5DD8-4996-BB68-4C0572EC477E/f:JeditableExtension.cs" caret="1263" fromTop="31" />
+      <File id="A5C6F950-2084-4482-9A0F-62A1B38DA64C/d:Controllers/f:HomeController.cs" caret="4075" fromTop="16" />
+      <File id="0C93AD1E-5DD8-4996-BB68-4C0572EC477E/f:JeditableCell.cs" caret="225" fromTop="8" />
+      <File id="0C93AD1E-5DD8-4996-BB68-4C0572EC477E/f:JeditableWriter.cs" caret="324" fromTop="12" />
+      <File id="0C93AD1E-5DD8-4996-BB68-4C0572EC477E/f:JeditableExtension.cs" caret="1430" fromTop="35" />
+      <File id="0C93AD1E-5DD8-4996-BB68-4C0572EC477E/f:JeditableCell.cs" caret="503" fromTop="23" />
+      <File id="A5C6F950-2084-4482-9A0F-62A1B38DA64C/d:Controllers/f:HomeController.cs" caret="4210" fromTop="30" />
+      <File id="0C93AD1E-5DD8-4996-BB68-4C0572EC477E/f:JeditableCell.cs" caret="481" fromTop="19" />
+      <File id="0C93AD1E-5DD8-4996-BB68-4C0572EC477E/f:JeditableColumn.cs" caret="377" fromTop="12" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.2\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="IEnumerable" priority="5" />
+      <Item value="public" priority="102" />
+      <Item value="int" priority="27" />
+      <Item value="bool" priority="31" />
+      <Item value="enum" priority="4" />
+      <Item value="align" priority="4" />
+      <Item value="true" priority="27" />
+      <Item value="Left" priority="0" />
+      <Item value="string" priority="89" />
+      <Item value="TestObject`0" priority="3" />
+      <Item value="p" priority="14" />
+      <Item value="flexigridConfiguration" priority="26" />
+      <Item value="SortOrder`0" priority="0" />
+      <Item value="order" priority="3" />
+      <Item value="protected" priority="60" />
+      <Item value="FlexigridConfiguration" priority="5" />
+      <Item value="void" priority="9" />
+      <Item value="Collection" priority="1" />
+      <Item value="collection" priority="12" />
+      <Item value="htmlHelper" priority="30" />
+      <Item value="TModel`0" priority="17" />
+      <Item value="new" priority="78" />
+      <Item value="FlexigridConfiguration&lt;TModel&gt;" priority="2" />
+      <Item value="columns" priority="22" />
+      <Item value="buttons" priority="7" />
+      <Item value="searchItems" priority="6" />
+      <Item value="sort" priority="6" />
+      <Item value="usePager" priority="1" />
+      <Item value="singleSelect" priority="2" />
+      <Item value="title" priority="2" />
+      <Item value="useRp" priority="1" />
+      <Item value="rp" priority="2" />
+      <Item value="showTableToggleButton" priority="1" />
+      <Item value="width" priority="10" />
+      <Item value="height" priority="3" />
+      <Item value="Ascending" priority="0" />
+      <Item value="ScriptTag`0" priority="0" />
+      <Item value="textWriter" priority="0" />
+      <Item value="AjaxHelper`0" priority="0" />
+      <Item value="FlexigridWriter`0" priority="0" />
+      <Item value="using" priority="5" />
+      <Item value="script" priority="6" />
+      <Item value="TemplateScript" priority="0" />
+      <Item value="_writer" priority="5" />
+      <Item value="Html" priority="7" />
+      <Item value="private" priority="5" />
+      <Item value="StringBuilder`0" priority="6" />
+      <Item value="sb" priority="11" />
+      <Item value="StringBuilder" priority="0" />
+      <Item value="write" priority="0" />
+      <Item value="IDisposable`0" priority="1" />
+      <Item value="var" priority="34" />
+      <Item value="ScriptArray`0" priority="0" />
+      <Item value="optionsArray" priority="2" />
+      <Item value="Resources" priority="12" />
+      <Item value="Options`0" priority="13" />
+      <Item value="key" priority="0" />
+      <Item value="value" priority="5" />
+      <Item value="DataType`0" priority="4" />
+      <Item value="name" priority="1" />
+      <Item value="OptionsArray`0" priority="1" />
+      <Item value="foreach" priority="3" />
+      <Item value="DataTable`0" priority="0" />
+      <Item value="static" priority="10" />
+      <Item value="List" priority="3" />
+      <Item value="List&lt;TestObject&gt;" priority="0" />
+      <Item value="obj" priority="4" />
+      <Item value="TestObject" priority="0" />
+      <Item value="One" priority="2" />
+      <Item value="Two" priority="1" />
+      <Item value="Columns" priority="8" />
+      <Item value="Buttons" priority="1" />
+      <Item value="SearchItems" priority="1" />
+      <Item value="Sort" priority="2" />
+      <Item value="Order" priority="0" />
+      <Item value="UsePager" priority="0" />
+      <Item value="SingleSelect" priority="0" />
+      <Item value="Title" priority="0" />
+      <Item value="UseRp" priority="0" />
+      <Item value="Rp" priority="0" />
+      <Item value="ShowTableToggleButton" priority="0" />
+      <Item value="Width" priority="4" />
+      <Item value="Height" priority="1" />
+      <Item value="Column" priority="3" />
+      <Item value="Property" priority="0" />
+      <Item value="property" priority="8" />
+      <Item value="Label" priority="1" />
+      <Item value="label" priority="5" />
+      <Item value="Sortable" priority="0" />
+      <Item value="sortable" priority="3" />
+      <Item value="Align" priority="0" />
+      <Item value="Visible" priority="0" />
+      <Item value="visible" priority="1" />
+      <Item value="return" priority="51" />
+      <Item value="null" priority="9" />
+      <Item value="dataTable" priority="2" />
+      <Item value="List&lt;Column&lt;TModel&gt;&gt;" priority="0" />
+      <Item value="colMode" priority="1" />
+      <Item value="column" priority="31" />
+      <Item value="Expression`0" priority="1" />
+      <Item value="expression" priority="1" />
+      <Item value="columnArray" priority="6" />
+      <Item value="if" priority="29" />
+      <Item value="mode" priority="1" />
+      <Item value="Comma" priority="0" />
+      <Item value="else" priority="6" />
+      <Item value="Empty" priority="0" />
+      <Item value="BtnClass" priority="0" />
+      <Item value="bClass" priority="1" />
+      <Item value="OnPressCallback" priority="0" />
+      <Item value="onpress" priority="1" />
+      <Item value="Button`0" priority="3" />
+      <Item value="List&lt;Button&gt;" priority="0" />
+      <Item value="interface" priority="0" />
+      <Item value="IButtonSeparator`0" priority="0" />
+      <Item value="is" priority="0" />
+      <Item value="as" priority="3" />
+      <Item value="ISearchItem`0" priority="1" />
+      <Item value="IList" priority="1" />
+      <Item value="List&lt;ISearchItem&gt;" priority="0" />
+      <Item value="SearchItem`0" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="serach" priority="0" />
+      <Item value="SearchItem" priority="0" />
+      <Item value="Format`0" priority="0" />
+      <Item value="ActionResult`0" priority="1" />
+      <Item value="HttpGet" priority="0" />
+      <Item value="JavaScriptResult`0" priority="2" />
+      <Item value="javaScriptResult" priority="2" />
+      <Item value="JavaScriptResult" priority="0" />
+      <Item value="target" priority="5" />
+      <Item value="Uri`0" priority="0" />
+      <Item value="url" priority="3" />
+      <Item value="btn" priority="0" />
+      <Item value="false" priority="4" />
+      <Item value="CssWidth`0" priority="5" />
+      <Item value="Width`0" priority="1" />
+      <Item value="Auto" priority="0" />
+      <Item value="auto" priority="0" />
+      <Item value="override" priority="2" />
+      <Item value="IsAuto" priority="0" />
+      <Item value="CssWidth" priority="1" />
+      <Item value="CssHeight" priority="1" />
+      <Item value="base" priority="1" />
+      <Item value="Method`0" priority="0" />
+      <Item value="float" priority="1" />
+      <Item value="object" priority="13" />
+      <Item value="options" priority="3" />
+      <Item value="description" priority="1" />
+      <Item value="inf" priority="1" />
+      <Item value="Type`0" priority="0" />
+      <Item value="MemberTypes`0" priority="0" />
+      <Item value="Default" priority="1" />
+      <Item value="MemberFilter`0" priority="0" />
+      <Item value="mbrInfoArray" priority="0" />
+      <Item value="memberInfo" priority="3" />
+      <Item value="Dictionary&lt;string,object&gt;" priority="4" />
+      <Item value="t" priority="0" />
+      <Item value="typeof" priority="2" />
+      <Item value="attribute" priority="0" />
+      <Item value="PropertyInfo`0" priority="0" />
+      <Item value="CssHeight`0" priority="0" />
+      <Item value="out" priority="0" />
+      <Item value="continue" priority="0" />
+      <Item value="Striped" priority="0" />
+      <Item value="Novstripe" priority="0" />
+      <Item value="Minwidth" priority="0" />
+      <Item value="Minheight" priority="0" />
+      <Item value="Resizable" priority="0" />
+      <Item value="Method" priority="0" />
+      <Item value="Post" priority="0" />
+      <Item value="Json" priority="0" />
+      <Item value="ErrorMeg" priority="0" />
+      <Item value="class" priority="0" />
+      <Item value="config" priority="1" />
+      <Item value="TagBuilder`0" priority="8" />
+      <Item value="table" priority="4" />
+      <Item value="TagRenderMode`0" priority="6" />
+      <Item value="htmlAttributes" priority="4" />
+      <Item value="th" priority="0" />
+      <Item value="tHead" priority="3" />
+      <Item value="thr" priority="0" />
+      <Item value="this" priority="27" />
+      <Item value="Model" priority="3" />
+      <Item value="hRow" priority="0" />
+      <Item value="Func&lt;TModel,object&gt;" priority="0" />
+      <Item value="dataTableColumns" priority="1" />
+      <Item value="dlgText" priority="4" />
+      <Item value="sbData" priority="1" />
+      <Item value="td" priority="1" />
+      <Item value="bRow" priority="1" />
+      <Item value="sbBody" priority="1" />
+      <Item value="tBody" priority="0" />
+      <Item value="TProperty`0" priority="0" />
+      <Item value="text" priority="1" />
+      <Item value="Guid`0" priority="0" />
+      <Item value="attributes" priority="2" />
+      <Item value="id" priority="4" />
+      <Item value="dictionary" priority="0" />
+      <Item value="XAttribute`0" priority="0" />
+      <Item value="Action&lt;IToolbarConfiguration&gt;" priority="0" />
+      <Item value="Flexigrid" priority="0" />
+      <Item value="FlexigridViewModel`0" priority="0" />
+      <Item value="flexigridViewModel" priority="0" />
+      <Item value="HttpPost" priority="0" />
+      <Item value="ControllerExtension`0" priority="0" />
+      <Item value="controller" priority="1" />
+      <Item value="FlexigridRow" priority="2" />
+      <Item value="DisplayName" priority="1" />
+      <Item value="JsonResult`0" priority="1" />
+      <Item value="result" priority="0" />
+      <Item value="JsonResult" priority="0" />
+      <Item value="Property`0" priority="3" />
+      <Item value="FlexigridCollection" priority="1" />
+      <Item value="flexigridCollection" priority="5" />
+      <Item value="FlexigridCollection&lt;TModel&gt;" priority="0" />
+      <Item value="Rows" priority="0" />
+      <Item value="List&lt;FlexigridRow&lt;TModel&gt;&gt;" priority="0" />
+      <Item value="flexigridRow" priority="4" />
+      <Item value="FlexigridRow&lt;TModel&gt;" priority="0" />
+      <Item value="KeyValuePair" priority="1" />
+      <Item value="Cell" priority="0" />
+      <Item value="List&lt;KeyValuePair&lt;string,object&gt;&gt;" priority="0" />
+      <Item value="KeyValuePair&lt;string,object&gt;" priority="0" />
+      <Item value="configuration" priority="10" />
+      <Item value="FlexigridConfiguration&lt;TestObject&gt;" priority="0" />
+      <Item value="IDictionary" priority="1" />
+      <Item value="DenyGet" priority="0" />
+      <Item value="routeValueDictionary" priority="0" />
+      <Item value="route" priority="1" />
+      <Item value="UrlHelper`0" priority="3" />
+      <Item value="urlHelper" priority="3" />
+      <Item value="UrlHelper" priority="4" />
+      <Item value="RouteValueDictionary" priority="3" />
+      <Item value="routeValue" priority="1" />
+      <Item value="Controller`0" priority="0" />
+      <Item value="Action`0" priority="1" />
+      <Item value="ISearchConfiguration" priority="0" />
+      <Item value="helepr" priority="0" />
+      <Item value="helper" priority="2" />
+      <Item value="RouteValueDictionary`0" priority="1" />
+      <Item value="RenderArrayMode`0" priority="0" />
+      <Item value="page" priority="0" />
+      <Item value="total" priority="0" />
+      <Item value="IFlexigridConfiguration`0" priority="1" />
+      <Item value="dataType" priority="2" />
+      <Item value="IFlexigridConfiguration" priority="2" />
+      <Item value="_searchItems" priority="0" />
+      <Item value="_url" priority="2" />
+      <Item value="_dataType" priority="0" />
+      <Item value="_sort" priority="0" />
+      <Item value="_order" priority="0" />
+      <Item value="_usePager" priority="0" />
+      <Item value="_showTableToggleBtn" priority="0" />
+      <Item value="_width" priority="0" />
+      <Item value="_height" priority="0" />
+      <Item value="_singleSelect" priority="0" />
+      <Item value="_useRp" priority="0" />
+      <Item value="_rp" priority="0" />
+      <Item value="_htmlHelper" priority="2" />
+      <Item value="FlexigridWriter" priority="0" />
+      <Item value="Target" priority="0" />
+      <Item value="DataType" priority="0" />
+      <Item value="Align`0" priority="0" />
+      <Item value="VisibleInternal" priority="0" />
+      <Item value="SortableInternal" priority="1" />
+      <Item value="LabelInternal" priority="0" />
+      <Item value="AlignInternal" priority="0" />
+      <Item value="WidthInternal" priority="0" />
+      <Item value="IColumn" priority="0" />
+      <Item value="colum" priority="1" />
+      <Item value="IsVisible`0" priority="1" />
+      <Item value="Sortable`0" priority="0" />
+      <Item value="FlexigridResult`0" priority="0" />
+      <Item value="UseRpInternal" priority="0" />
+      <Item value="Delegate`0" priority="0" />
+      <Item value="action" priority="1" />
+      <Item value="delegate" priority="0" />
+      <Item value="PostRenderDelegate`0" priority="1" />
+      <Item value="postRenderDelegate" priority="2" />
+      <Item value="columnInternal" priority="6" />
+      <Item value="PostRenderDelegate" priority="0" />
+      <Item value="Test`0" priority="0" />
+      <Item value="PostRenderObject" priority="1" />
+      <Item value="routeUrl" priority="2" />
+      <Item value="AddAttributes`0" priority="0" />
+      <Item value="AppDomainSetup`0" priority="0" />
+      <Item value="JeditableConfiguration" priority="0" />
+      <Item value="targetClass" priority="0" />
+      <Item value="PreRenderObject" priority="1" />
+      <Item value="PreRenderDelegate&lt;TModel&gt;" priority="0" />
+      <Item value="Redux.Web" priority="0" />
+      <Item value="KeyValuePair&lt;string,Func&lt;TModel,object&gt;&gt;" priority="0" />
+      <Item value="PreRenderDelegate" priority="0" />
+      <Item value="JeditableConfiguration`0" priority="0" />
+      <Item value="FormCollection`0" priority="0" />
+      <Item value="formCollection" priority="0" />
+      <Item value="FlexigridCell&lt;TModel&gt;" priority="0" />
+      <Item value="cell" priority="6" />
+      <Item value="primaryColumn" priority="0" />
+      <Item value="Value" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Redux.Web.jQuery.Flexigrid.Html.FlexigridExtension">
+      <Item value="FlexigridFor`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.Templating.IToolbarConfiguration">
+      <Item value="AddButton`0" priority="1" />
+      <Item value="AddSeparator`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.Templating.ISearchConfiguration">
+      <Item value="AddField`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.jQuery.Flexigrid.Text.TestObject">
+      <Item value="One" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.jQuery.Flexigrid.FlexigridConfiguration`1">
+      <Item value="SetCollection`0" priority="0" />
+      <Item value="Url" priority="3" />
+      <Item value="DatType" priority="1" />
+      <Item value="Columns" priority="4" />
+      <Item value="Buttons" priority="1" />
+      <Item value="SearchItems" priority="1" />
+      <Item value="Sort" priority="5" />
+      <Item value="Order" priority="1" />
+      <Item value="UsePager" priority="0" />
+      <Item value="SingleSelect" priority="1" />
+      <Item value="Title" priority="1" />
+      <Item value="UseRp" priority="1" />
+      <Item value="Rp" priority="1" />
+      <Item value="ShowTableToggleButton" priority="1" />
+      <Item value="Width" priority="1" />
+      <Item value="Height" priority="2" />
+      <Item value="MergeAttributes`2" priority="0" />
+      <Item value="Collection" priority="1" />
+      <Item value="SortInternal" priority="4" />
+      <Item value="ButtonsInternal" priority="1" />
+      <Item value="SearchItemsInternal" priority="1" />
+      <Item value="OrderInternal" priority="0" />
+      <Item value="DataTypeInternal" priority="0" />
+      <Item value="UrlInternal" priority="1" />
+      <Item value="SingleSelectInternal" priority="0" />
+      <Item value="TitleInternal" priority="0" />
+      <Item value="UseRpInternal" priority="0" />
+      <Item value="RpInternal" priority="0" />
+      <Item value="WidthInternal" priority="0" />
+      <Item value="HeightInternal" priority="0" />
+      <Item value="Url`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.HtmlHelper`1">
+      <Item value="FlexigridFor`1" priority="0" />
+      <Item value="ViewContext" priority="4" />
+      <Item value="ActionLink`0" priority="0" />
+      <Item value="FlexigridWithTable`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.HtmlHelper">
+      <Item value="ViewContext" priority="10" />
+      <Item value="ViewData" priority="2" />
+      <Item value="FlexigridFor`1" priority="1" />
+      <Item value="FlexigridWithTable`1" priority="0" />
+      <Item value="Flexigrid`1" priority="1" />
+      <Item value="Table`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ViewContext">
+      <Item value="Writer" priority="9" />
+      <Item value="FormContext" priority="0" />
+      <Item value="RequestContext" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.TextWriter">
+      <Item value="Write`0" priority="3" />
+      <Item value="WriteLine`0" priority="6" />
+      <Item value="Flush`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="AppendLine`0" priority="9" />
+      <Item value="ToString`0" priority="4" />
+      <Item value="Append`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.Templating.TemplateScript">
+      <Item value="Equals`0" priority="0" />
+      <Item value="Write`0" priority="0" />
+      <Item value="WriteLine`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.Templating.ScriptArray">
+      <Item value="WriteLine`0" priority="6" />
+      <Item value="Write`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Redux.Web.jQuery.Flexigrid.Resources.Options">
+      <Item value="Url" priority="1" />
+      <Item value="DataType" priority="0" />
+      <Item value="Columns" priority="0" />
+      <Item value="Display" priority="1" />
+      <Item value="Name" priority="1" />
+      <Item value="Width" priority="1" />
+      <Item value="Sortable" priority="0" />
+      <Item value="Hide" priority="0" />
+      <Item value="Aalign" priority="0" />
+      <Item value="Buttons" priority="0" />
+      <Item value="BtnClass" priority="0" />
+      <Item value="OnPressCallback" priority="0" />
+      <Item value="Separator" priority="0" />
+      <Item value="SearchItems" priority="1" />
+      <Item value="Isdefault" priority="1" />
+      <Item value="SortName" priority="0" />
+      <Item value="SortOrder" priority="0" />
+      <Item value="UsePager" priority="0" />
+      <Item value="SingleSelect" priority="0" />
+      <Item value="Title" priority="0" />
+      <Item value="UseRp" priority="0" />
+      <Item value="RP" priority="0" />
+      <Item value="ShowTableToggleButton" priority="0" />
+      <Item value="Height" priority="1" />
+      <Item value="Flexigrid" priority="0" />
+      <Item value="Id" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="10" />
+      <Item value="Empty" priority="14" />
+      <Item value="IsNullOrEmpty`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.Templating.DataType">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.jQuery.Flexigrid.DataTable`1">
+      <Item value="GetColumns`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.Templating.OptionsArray">
+      <Item value="WriteLine`0" priority="2" />
+      <Item value="Write`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.Templating.IColumn`1">
+      <Item value="Property" priority="5" />
+      <Item value="Label" priority="1" />
+      <Item value="Width" priority="1" />
+      <Item value="Sortable" priority="1" />
+      <Item value="Visible" priority="0" />
+      <Item value="Align" priority="0" />
+      <Item value="Width`0" priority="0" />
+      <Item value="Sortable`0" priority="0" />
+      <Item value="Editable`1" priority="2" />
+      <Item value="PostRender`0" priority="1" />
+      <Item value="PostRenderObject" priority="0" />
+      <Item value="PreRender`0" priority="0" />
+      <Item value="PreRenderObject" priority="1" />
+      <Item value="IsPrimary`0" priority="1" />
+      <Item value="PrimaryKey" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.Mvc.ModelMetadata">
+      <Item value="FromLambdaExpression`2" priority="1" />
+      <Item value="FromStringExpression`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.Expressions.Expression`1">
+      <Item value="ToString`0" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="Body" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ModelMetadata">
+      <Item value="DisplayName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Redux.Web.jQuery.Flexigrid.Property">
+      <Item value="GetExpressFromProperty`1" priority="4" />
+      <Item value="CreatePropertyDelegate`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.Expressions.Expression">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Boolean">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.Templating.Align">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Redux.Web.Templating.RenderArrayMode">
+      <Item value="Comma" priority="3" />
+      <Item value="Empty" priority="10" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
+      <Item value="Last`1" priority="1" />
+      <Item value="Add`0" priority="0" />
+      <Item value="Count`1" priority="0" />
+      <Item value="Select`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="4" />
+      <Item value="Last`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.jQuery.Flexigrid.Buttons">
+      <Item value="GetButtons`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.Templating.IButton">
+      <Item value="BtnClass" priority="0" />
+      <Item value="OnPressCallback" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.jQuery.Flexigrid.Search`1">
+      <Item value="GetColumns`0" priority="0" />
+      <Item value="GetSearchFields`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.Templating.ISearchItem`1">
+      <Item value="Display" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="GetType`0" priority="0" />
+      <Item value="IsDefault" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.JavaScriptResult">
+      <Item value="Script" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Redux.Web.jQuery.Flexigrid.FlexigridWriter`1">
+      <Item value="Writer`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable`1">
+      <Item value="HasValue" priority="8" />
+      <Item value="Value" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.jQuery.Flexigrid.Button">
+      <Item value="Label" priority="1" />
+      <Item value="BtnClass" priority="0" />
+      <Item value="OnPressCallback" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Indexer" priority="0" />
+      <Item value="ToLower`0" priority="5" />
+      <Item value="Replace`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ComponentModel.DescriptionAttribute">
+      <Item value="Description" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IDictionary`2">
+      <Item value="Indexer" priority="1" />
+      <Item value="Add`0" priority="1" />
+      <Item value="ContainsKey`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Reflection.MemberTypes">
+      <Item value="Property" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="GetCustomAttributes`0" priority="0" />
+      <Item value="FindMembers`0" priority="1" />
+      <Item value="toar" priority="1" />
+      <Item value="GetProperties`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Type">
+      <Item value="FilterAttribute" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.MethodInfo">
+      <Item value="Invoke`0" priority="0" />
+      <Item value="GetCustomAttributes`0" priority="0" />
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.PropertyInfo">
+      <Item value="SetValue`0" priority="0" />
+      <Item value="PropertyType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="7" />
+      <Item value="GetType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="TryParse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.TagBuilder">
+      <Item value="ToString`0" priority="7" />
+      <Item value="MergeAttribute`0" priority="2" />
+      <Item value="MergeAttributes`2" priority="0" />
+      <Item value="SetInnerText`0" priority="2" />
+      <Item value="InnerHtml" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.Mvc.TagRenderMode">
+      <Item value="Normal" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.Html.DataTable`1">
+      <Item value="GetColumns`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Redux.Web.Html.TableWriter">
+      <Item value="Writer`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Guid">
+      <Item value="NewGuid`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Guid">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Redux.Web.Templating.Identifier">
+      <Item value="GenerateId`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.Templating.IDataTableConfiguration`1">
+      <Item value="AddColumn`0" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.jQuery.Text.Models.TestObject">
+      <Item value="One" priority="5" />
+      <Item value="Two" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.jQuery.Flexigrid.FlexigridCollection`1">
+      <Item value="Rows" priority="1" />
+      <Item value="rows" priority="0" />
+      <Item value="page" priority="0" />
+      <Item value="total" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.jQuery.Flexigrid.FlexigridRow`1">
+      <Item value="Cell" priority="0" />
+      <Item value="Id" priority="0" />
+      <Item value="id" priority="0" />
+      <Item value="cell" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Func`2">
+      <Item value="Method" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.jQuery.Text.Controllers.HomeController">
+      <Item value="FlexigridView`1" priority="0" />
+      <Item value="HttpContext" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.Mvc.UrlHelper">
+      <Item value="GenerateContentUrl`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.UrlHelper">
+      <Item value="RouteUrl`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Redux.Web.jQuery.Flexigrid.FlexigridWriter">
+      <Item value="Writer`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.jQuery.Flexigrid.IFlexigridConfiguration`1">
+      <Item value="ToString`0" priority="0" />
+      <Item value="Height`0" priority="1" />
+      <Item value="UsePager`0" priority="0" />
+      <Item value="ShowTableToggleBtn`0" priority="0" />
+      <Item value="Width`0" priority="0" />
+      <Item value="Title`0" priority="0" />
+      <Item value="Editable`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.jQuery.Flexigrid.IFlexigridPagerConfiguration`1">
+      <Item value="Url`0" priority="0" />
+      <Item value="UseRp`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Redux.Web.Templating.DataType">
+      <Item value="Json" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.jQuery.Flexigrid.Column`1">
+      <Item value="WidthInternal" priority="1" />
+      <Item value="LabelInternal" priority="1" />
+      <Item value="SortableInternal" priority="0" />
+      <Item value="AlignInternal" priority="0" />
+      <Item value="PostRenderDelegate" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.Mvc.JsonRequestBehavior">
+      <Item value="DenyGet" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Redux.Web.jQuery.Jeditable.JeditableWriter">
+      <Item value="Writer`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.jQuery.Jeditable.JeditableConfiguration">
+      <Item value="CssClass" priority="3" />
+      <Item value="Url" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.KeyValuePair`2">
+      <Item value="Value" priority="0" />
+      <Item value="Key" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.Html.Column`1">
+      <Item value="PreRenderObject" priority="0" />
+      <Item value="PreRenderDelegate" priority="3" />
+      <Item value="PrimaryInternal" priority="2" />
+      <Item value="PrimaryKey" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.jQuery.Flexigrid.FlexigridCell`1">
+      <Item value="Delegate" priority="1" />
+      <Item value="Wrapper" priority="1" />
+      <Item value="Id" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="First`1" priority="0" />
+      <Item value="FirstOrDefault`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Redux.Web.jQuery.Jeditable.JeditableCell">
+      <Item value="Value" priority="0" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="Editable`0" priority="0" />
+      <Item value="ToString`1" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
