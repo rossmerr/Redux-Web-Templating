@@ -12,10 +12,10 @@
     <h2>Example4</h2>
 
     <%= Html.Flexigrid<TestObject>(Model, columns =>
-                                                             {
-                                                                 columns.AddColumn(p => p.One).Width(150).Sortable(true).Editable("edit", new { Controller = "Home", Action = "EditCell" });
-                                                                 columns.AddColumn(p => p.Two);
-                                                             }).UsePager().UseRp(false).Url(new { Controller = "Home", Action = "Example4" }).ShowTableToggleBtn().Width(400).Height(100).Title("test")%>
+                                        {
+                                            columns.AddColumn(p => p.One).Width(150).Sortable(true).Editable("edit", new { Controller = "Home", Action = "EditCell" });
+                                            columns.AddColumn(p => p.Two);
+                                        }).UsePager().UseRp(false).Url(new { Controller = "Home", Action = "Example4" }).ShowTableToggleBtn().Width(400).Height(100).Title("test")%>
 
 
 </asp:Content>

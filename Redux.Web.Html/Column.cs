@@ -26,6 +26,7 @@ namespace Redux.Web.Html
         public Column(Expression<Func<TModel, object>> property)
         {
             Property = property;
+            VisibleInternal = true;
         }
 
         public Expression<Func<TModel, object>> Property { get; protected set; }

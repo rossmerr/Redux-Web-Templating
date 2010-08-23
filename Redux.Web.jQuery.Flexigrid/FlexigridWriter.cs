@@ -58,6 +58,11 @@ namespace Redux.Web.jQuery.Flexigrid
 
                                     columnArray.Write(Resources.Options.Sortable, columnInternal.SortableInternal.ToString().ToLower(),
                                                       RenderArrayMode.Comma);
+
+                                    if (!columnInternal.VisibleInternal)
+                                        columnArray.Write(Resources.Options.Hide, String.Format("'{0}'", (!columnInternal.VisibleInternal).ToString().ToLower()),
+                                                          RenderArrayMode.Comma);
+
                                     columnArray.Write(Resources.Options.Align, String.Format("'{0}'", columnInternal.AlignInternal),
                                                       RenderArrayMode.Empty);
                                 }
@@ -95,8 +100,7 @@ namespace Redux.Web.jQuery.Flexigrid
                                                               RenderArrayMode.Comma);
 
                                         if (!string.IsNullOrEmpty(btn.OnPressCallback))
-                                            columnArray.Write(Resources.Options.OnPressCallback, btn.OnPressCallback,
-                                                              RenderArrayMode.Comma);
+                                            columnArray.Write(Resources.Options.OnPressCallback, btn.OnPressCallback, RenderArrayMode.Comma);
 
                                         if (!string.IsNullOrEmpty(btn.Label))
                                             columnArray.Write(Resources.Options.Name, String.Format("'{0}'", btn.Label),
@@ -115,6 +119,8 @@ namespace Redux.Web.jQuery.Flexigrid
                                 }
                             }
                         }
+                                                
+                        optionsArray.WriteLine(",");
                     }
 
                     if (flexigridConfiguration.SearchItemsInternal != null)

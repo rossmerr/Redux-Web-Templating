@@ -22,20 +22,20 @@ namespace Redux.Web.jQuery.Flexigrid.Html
             var dataTableColumns = dataTable.GetColumns();
             var delegates = new List<FlexigridCell<TModel>>();
 
-
-            Func<TModel, object> primary = null;
+            Delegate primary = null;
             var primaryColumn = dataTableColumns.Select(p => p.IsPrimary(true)).FirstOrDefault();
             if (primaryColumn != null)
             {
                 var prop = Property.GetExpressFromProperty(primaryColumn.Property);
-                primary = (Func<TModel, object>)Property.CreatePropertyDelegate<TModel, object>(prop);
+                primary = Property.CreatePropertyDelegate<TModel, object>(prop);
             }
 
             foreach (var column in dataTableColumns)
             {
                 var columnInternal = (Column<TModel>)column;
                 var property = Property.GetExpressFromProperty(columnInternal.Property);
-                var dlgText = (Func<TModel, object>) Property.CreatePropertyDelegate<TModel, object>(property);
+                var dlgText = Property.CreatePropertyDelegate<TModel, object>(property);
+
                 var cell = new FlexigridCell<TModel>
                                {
                                    Delegate = dlgText,
@@ -57,9 +57,9 @@ namespace Redux.Web.jQuery.Flexigrid.Html
 
                 foreach (var dlgText in delegates)
                 {
-                    var key = primary(row).ToString();
+                    var key = primary.DynamicInvoke(row).ToString();
 
-                    var text = dlgText.Delegate(row).ToString();
+                    var text = dlgText.Delegate.DynamicInvoke(row).ToString();
                     flexigridRow.cell.Add(string.Format(dlgText.Wrapper, text, key));
 
                     if (!string.IsNullOrEmpty(dlgText.Id))

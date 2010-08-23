@@ -23,8 +23,8 @@ namespace Redux.Web.Html
                 columns(dataTable);
 
                 var dataTableColumns = dataTable.GetColumns();
-                var delegates = new List<Func<TModel, object>>();
- 
+
+                var delegates = new List<Delegate>(); 
 
                 var tHead = new TagBuilder("thead");
 
@@ -35,7 +35,7 @@ namespace Redux.Web.Html
                 foreach (var column in dataTableColumns)
                 {
                     var property = Property.GetExpressFromProperty(column.Property);
-                    var dlgText = (Func<TModel, object>)Property.CreatePropertyDelegate<TModel, object>(property);
+                    var dlgText = Property.CreatePropertyDelegate<TModel, object>(property);
 
                     if (dlgText == null) throw new NullReferenceException("Property not found");
 
@@ -62,7 +62,7 @@ namespace Redux.Web.Html
 
                     foreach (var dlgText in delegates)
                     {
-                        var text = dlgText(row).ToString();
+                        var text = dlgText.DynamicInvoke(row).ToString();
                         var td = new TagBuilder("td");
                         td.SetInnerText(text);
                         sbData.Append(td.ToString(TagRenderMode.Normal));
