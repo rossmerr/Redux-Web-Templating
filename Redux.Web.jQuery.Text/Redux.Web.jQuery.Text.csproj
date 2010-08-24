@@ -75,30 +75,23 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\flexigrid\flexigrid.css" />
-    <Content Include="Content\flexigrid\images\._fhbg.gif" />
-    <Content Include="Content\flexigrid\images\._wbg.gif" />
-    <Content Include="Content\flexigrid\images\bg.gif" />
-    <Content Include="Content\flexigrid\images\btn-sprite.gif" />
-    <Content Include="Content\flexigrid\images\ddn.png" />
-    <Content Include="Content\flexigrid\images\dn.png" />
-    <Content Include="Content\flexigrid\images\fhbg.gif" />
-    <Content Include="Content\flexigrid\images\first.gif" />
-    <Content Include="Content\flexigrid\images\hl.png" />
-    <Content Include="Content\flexigrid\images\last.gif" />
-    <Content Include="Content\flexigrid\images\line.gif" />
-    <Content Include="Content\flexigrid\images\load.gif" />
-    <Content Include="Content\flexigrid\images\load.png" />
-    <Content Include="Content\flexigrid\images\magnifier.png" />
-    <Content Include="Content\flexigrid\images\next.gif" />
-    <Content Include="Content\flexigrid\images\prev.gif" />
-    <Content Include="Content\flexigrid\images\up.png" />
-    <Content Include="Content\flexigrid\images\uup.png" />
-    <Content Include="Content\flexigrid\images\wbg.gif" />
-    <Content Include="Content\images\add.png" />
-    <Content Include="Content\images\close.png" />
+    <Content Include="Content\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\jquery-ui-1.8.4.custom.css" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\flexigrid.js" />
+    <Content Include="Scripts\jquery-ui-1.8.4.custom.min.js" />
     <Content Include="Scripts\jquery.jeditable.js" />
     <Content Include="Views\Home\Example2.aspx" />
     <Content Include="Views\Home\Example1.aspx" />
@@ -139,6 +132,10 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Reduc.Web.jQuery.Timepicker\Reduc.Web.jQuery.Timepicker.csproj">
+      <Project>{5A78BF9C-7B93-4719-AABB-12174A327C21}</Project>
+      <Name>Reduc.Web.jQuery.Timepicker</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Redux.Web.Html\Redux.Web.Html.csproj">
       <Project>{5C801840-C1F1-46FC-84BD-EA52F7BFB9E8}</Project>
       <Name>Redux.Web.Html</Name>

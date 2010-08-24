@@ -34,21 +34,12 @@ namespace Redux.Web.jQuery.Text.Controllers
 
         public ActionResult Example2()
         {
-            var obj = new List<TestObject>()
-                          {
-                              new TestObject()
-                                  {
-                                      One = "test",
-                                      Two = "two"
-                                  },
-                              new TestObject()
-                                  {
-                                      One = "test",
-                                      Two = "two"
-                                  }
-                          };
 
-            return View(obj);
+            return View(new TestObject()
+            {
+                One = "test",
+                Two = "two"
+            });
         }
 
 
@@ -57,8 +48,8 @@ namespace Redux.Web.jQuery.Text.Controllers
 
             var obj = new List<string>()
                           {
-                              "test",
-                              "test23"
+                              "",
+                              DateTime.UtcNow.ToString()
                           };
 
 
