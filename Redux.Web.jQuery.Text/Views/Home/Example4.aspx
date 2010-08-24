@@ -4,7 +4,9 @@
 <%@ Import Namespace="Redux.Web.jQuery.Jeditable" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-	Example4
+    <title>
+    Example4
+    </title>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">

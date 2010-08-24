@@ -1,196 +1,22 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<TestObject>>" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<TestObject>" %>
 <%@ Import Namespace="Redux.Web.jQuery.Text.Models" %>
-<%@ Import Namespace="Redux.Web.Templating" %>
+<%@ Import Namespace="Redux.Web.jQuery.SmartTextBox" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-	Example3
+    <title>
+    Example3
+    </title>
+    <%= Html.SmartTextBoxApi() %>
+    <%= Html.SmartTextBoxStyle() %>
+
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
     <h2>Example3</h2>
 
-    <table class="flexme">
-        <thead>
-    		    <tr>
-            	    <th width="100">Col 1</th>
-            	    <th width="100">Col 2</th>
-
-            	    <th width="100">Col 3 is a long header name</th>
-            	    <th width="300">Col 4</th>
-                </tr>
-        </thead>
-        <tbody>
-    		    <tr>
-            	    <td>This is data 1 with overflowing content</td>
-
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-                </tr>
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-                </tr>
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-
-            	    <td>This is data 4</td>
-                </tr>
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-
-                </tr>
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-                </tr>
-
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-                </tr>
-    		    <tr>
-            	    <td>This is data 1 with overflowing content</td>
-
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-                </tr>
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-                </tr>
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-
-            	    <td>This is data 4</td>
-                </tr>
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-
-                </tr>
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-                </tr>
-
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-                </tr>
-
-                    		    <tr>
-            	    <td>This is data 1 with overflowing content</td>
-
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-                </tr>
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-                </tr>
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-
-            	    <td>This is data 4</td>
-                </tr>
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-
-                </tr>
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-                </tr>
-
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-                </tr>
-    		    <tr>
-            	    <td>This is data 1 with overflowing content</td>
-
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-                </tr>
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-                </tr>
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-
-            	    <td>This is data 4</td>
-                </tr>
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-
-                </tr>
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-                </tr>
-
-    		    <tr>
-            	    <td>This is data 1</td>
-            	    <td>This is data 2</td>
-            	    <td>This is data 3</td>
-            	    <td>This is data 4</td>
-                </tr>
-        </tbody>        
-    </table>
-
- 
+    <%= Html.SmartTextBoxFor(p => p.One).SubmitChars(',').AutocompleteUrl(new { Controller = "Home", Action = "Example3Json" }).OnlyAutocomplete(true)%>
 
 
-    <%= Html.Flexigrid<TestObject>(".flexme", new { Height = 200, usepager = true })%>
+
 </asp:Content>

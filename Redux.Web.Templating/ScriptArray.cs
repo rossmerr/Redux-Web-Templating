@@ -46,7 +46,7 @@ namespace Redux.Web.Templating
         }
 
         public void Dispose()
-        {            
+        {           
             _writer.WriteLine("}");
         }
     }

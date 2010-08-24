@@ -12,8 +12,6 @@ namespace Redux.Web.jQuery.Flexigrid.Html
 {
     public static class FlexigridExtension
     {
-
-
         public static IFlexigridConfiguration<TModel> Flexigrid<TModel>(this HtmlHelper htmlHelper, string target)
         {
             return new FlexigridConfiguration<TModel>(htmlHelper, target, null);

@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0C93AD1E-5DD8-4996-BB68-4C0572EC477E}</ProjectGuid>
+    <ProjectGuid>{C9A59461-E51D-4E10-B962-F95A0213E2A3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Redux.Web.jQuery.Jeditable</RootNamespace>
-    <AssemblyName>Redux.Web.jQuery.Jeditable</AssemblyName>
+    <RootNamespace>Redux.Web.jQuery.SmartTextBox</RootNamespace>
+    <AssemblyName>Redux.Web.jQuery.SmartTextBox</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,8 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Redux.Web.jQuery.SmartTextBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.Routing" />
@@ -43,19 +45,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="JeditableCell.cs" />
-    <Compile Include="JeditableColumn.cs" />
-    <Compile Include="JeditableConfiguration.cs" />
-    <Compile Include="JeditableController.cs" />
-    <Compile Include="JeditableExtension.cs" />
-    <Compile Include="JeditableWriter.cs" />
+    <Compile Include="ControllerExtensions.cs" />
+    <Compile Include="ISmartTextBoxConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Scripts\jquery.jeditable.js" />
+    <Compile Include="Resources\Options.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Options.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SmartTextBoxConfiguration.cs" />
+    <Compile Include="SmartTextBoxController.cs" />
+    <Compile Include="SmartTextBoxExtensions.cs" />
+    <Compile Include="SmartTextBoxResult.cs" />
+    <Compile Include="SmartTextBoxWriter.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Redux.Web.Html\Redux.Web.Html.csproj">
@@ -66,6 +68,17 @@
       <Project>{816B6CCE-75B5-446E-A648-F21B974E58B7}</Project>
       <Name>Redux.Web.Templating</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Options.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Options.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Content\images\close.gif" />
+    <EmbeddedResource Include="Content\SmartTextBox.css" />
+    <EmbeddedResource Include="Script\SmartTextBox.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

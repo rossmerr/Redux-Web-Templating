@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Redux.Web.jQuery.Flexigrid;
+using Redux.Web.jQuery.SmartTextBox;
 using Redux.Web.jQuery.Text.Models;
 using Redux.Web.jQuery.Flexigrid.Html;
 using Redux.Web.jQuery.Jeditable;
@@ -51,23 +52,27 @@ namespace Redux.Web.jQuery.Text.Controllers
             return View(obj);
         }
 
-        public ActionResult Example3()
+
+        public JsonResult Example3Json()
         {
-            var obj = new List<TestObject>()
+
+            var obj = new List<string>()
                           {
-                              new TestObject()
-                                  {
-                                      One = "test",
-                                      Two = "two"
-                                  },
-                              new TestObject()
-                                  {
-                                      One = "test",
-                                      Two = "two"
-                                  }
+                              "test",
+                              "test23"
                           };
 
-            return View(obj);
+
+            return this.SmartTextBoxView(obj);
+        }
+
+        public ActionResult Example3()
+        {
+            return View(new TestObject()
+                            {
+                                One = string.Empty,
+                                Two = "two"
+                            });
         }
 
         public ActionResult Example4()

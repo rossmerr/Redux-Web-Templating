@@ -33,6 +33,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,8 +46,10 @@
   <ItemGroup>
     <Compile Include="Align.cs" />
     <Compile Include="CssHeight.cs" />
+    <Compile Include="CssResult.cs" />
     <Compile Include="CssWidth.cs" />
     <Compile Include="DataType.cs" />
+    <Compile Include="GifResult.cs" />
     <Compile Include="IButton.cs" />
     <Compile Include="IButtonSeparator.cs" />
     <Compile Include="IColumn.cs" />
@@ -55,12 +60,15 @@
     <Compile Include="IDataTableConfiguration.cs" />
     <Compile Include="Method.cs" />
     <Compile Include="OptionsArray.cs" />
+    <Compile Include="PngResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Property.cs" />
     <Compile Include="RenderArrayMode.cs" />
+    <Compile Include="ResourceManager.cs" />
     <Compile Include="ScriptArray.cs" />
     <Compile Include="ScriptTag.cs" />
     <Compile Include="SortOrder.cs" />
+    <Compile Include="SwfResult.cs" />
     <Compile Include="TemplateController.cs" />
     <Compile Include="TemplateScript.cs" />
   </ItemGroup>

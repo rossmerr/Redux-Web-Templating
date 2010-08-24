@@ -151,6 +151,10 @@
       <Project>{0C93AD1E-5DD8-4996-BB68-4C0572EC477E}</Project>
       <Name>Redux.Web.jQuery.Jeditable</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Redux.Web.jQuery.SmartTextBox\Redux.Web.jQuery.SmartTextBox.csproj">
+      <Project>{C9A59461-E51D-4E10-B962-F95A0213E2A3}</Project>
+      <Name>Redux.Web.jQuery.SmartTextBox</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Redux.Web.Templating\Redux.Web.Templating.csproj">
       <Project>{816B6CCE-75B5-446E-A648-F21B974E58B7}</Project>
       <Name>Redux.Web.Templating</Name>
