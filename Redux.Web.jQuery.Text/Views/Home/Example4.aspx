@@ -2,11 +2,15 @@
 <%@ Import Namespace="Redux.Web.jQuery.Text.Models" %>
 <%@ Import Namespace="Redux.Web.Templating" %>
 <%@ Import Namespace="Redux.Web.jQuery.Jeditable" %>
+<%@ Import Namespace="Redux.Web.jQuery.Flexigrid" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
     <title>
     Example4
     </title>
+    <%= Html.FlexigridApi() %>
+    <%= Html.FlexigridStyle() %>
+
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">

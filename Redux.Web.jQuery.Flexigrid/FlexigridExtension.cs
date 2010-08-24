@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
 using System.Web.Mvc;
 using System.Web.Routing;
 using Redux.Web.Html;
 using Redux.Web.Templating;
 
-namespace Redux.Web.jQuery.Flexigrid.Html
+namespace Redux.Web.jQuery.Flexigrid
 {
     public static class FlexigridExtension
     {
@@ -44,6 +41,23 @@ namespace Redux.Web.jQuery.Flexigrid.Html
             htmlHelper.Table(collection, columns, htmlAttributes);
 
             return new FlexigridConfiguration<TModel>(htmlHelper, "#" + id, columns);
+        }
+
+        public static string FlexigridApi(this HtmlHelper htmlHelper)
+        {
+            var script = new TagBuilder("script");
+            script.MergeAttribute("type", "text/javascript");
+            script.MergeAttribute("src", "/Flexigrid/Api");
+            return script.ToString(TagRenderMode.Normal);
+        }
+
+        public static string FlexigridStyle(this HtmlHelper htmlHelper)
+        {
+            var script = new TagBuilder("link");
+            script.MergeAttribute("type", "text/css");
+            script.MergeAttribute("rel", "stylesheet");
+            script.MergeAttribute("href", "/Flexigrid/Style");
+            return script.ToString(TagRenderMode.Normal);
         }
 
         private static string GetId(IDictionary<string, object> attributes)

@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<TestObject>>" %>
 <%@ Import Namespace="Redux.Web.jQuery.Text.Models" %>
+<%@ Import Namespace="Redux.Web.jQuery.Flexigrid" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	Example 1

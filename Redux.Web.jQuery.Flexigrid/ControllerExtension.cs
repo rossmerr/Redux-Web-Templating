@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Web.Mvc;
 using Redux.Web.Html;
 using Redux.Web.Templating;
 
-namespace Redux.Web.jQuery.Flexigrid.Html
+namespace Redux.Web.jQuery.Flexigrid
 {
     public static class ControllerExtension
     {

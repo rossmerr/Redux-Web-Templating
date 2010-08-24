@@ -15,6 +15,7 @@ namespace Redux.Web.jQuery.SmartTextBox
         private const string IMAGE = "Content.images.close.gif";
 
         [HttpGet]
+        [OutputCache(Duration = 3600, VaryByParam = "none")]
         public ActionResult Api()
         {
             var stream = ResourceManager.GetEmbeddedFile(PATH, SCRIPT);
@@ -22,12 +23,14 @@ namespace Redux.Web.jQuery.SmartTextBox
         }
 
         [HttpGet]
+        [OutputCache(Duration = 3600, VaryByParam = "none")]
         public CssResult Style()
         {
             return new CssResult(ResourceManager.GetEmbeddedFile(PATH, STYLE));
         }
 
         [HttpGet]
+        [OutputCache(Duration = 3600, VaryByParam = "none")]
         public GifResult Image()
         {            
             var img = System.Drawing.Image.FromStream(ResourceManager.GetEmbeddedFile(PATH, IMAGE));

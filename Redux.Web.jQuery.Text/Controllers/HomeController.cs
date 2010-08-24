@@ -6,7 +6,6 @@ using System.Web.Mvc;
 using Redux.Web.jQuery.Flexigrid;
 using Redux.Web.jQuery.SmartTextBox;
 using Redux.Web.jQuery.Text.Models;
-using Redux.Web.jQuery.Flexigrid.Html;
 using Redux.Web.jQuery.Jeditable;
 
 namespace Redux.Web.jQuery.Text.Controllers

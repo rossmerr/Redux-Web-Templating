@@ -54,6 +54,7 @@
     <Compile Include="IButtonSeparator.cs" />
     <Compile Include="IColumn.cs" />
     <Compile Include="Identifier.cs" />
+    <Compile Include="ImageResult.cs" />
     <Compile Include="ISearchConfiguration.cs" />
     <Compile Include="ISearchItem.cs" />
     <Compile Include="IToolbarConfiguration.cs" />

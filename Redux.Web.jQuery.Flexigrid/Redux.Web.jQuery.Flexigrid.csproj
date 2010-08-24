@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.Routing" />
@@ -55,8 +56,8 @@
     <Compile Include="FlexigridRow.cs" />
     <Compile Include="FlexigridViewModel.cs" />
     <Compile Include="FlexigridWriter.cs" />
-    <Compile Include="Html\ControllerExtension.cs" />
-    <Compile Include="Html\FlexigridExtension.cs" />
+    <Compile Include="ControllerExtension.cs" />
+    <Compile Include="FlexigridExtension.cs" />
     <Compile Include="IFlexigridConfiguration.cs" />
     <Compile Include="IFlexigridPagerConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,6 +87,26 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Script\flexigrid.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Content\flexigrid.css" />
+    <EmbeddedResource Include="Content\images\bg.gif" />
+    <EmbeddedResource Include="Content\images\btn-sprite.gif" />
+    <EmbeddedResource Include="Content\images\ddn.png" />
+    <EmbeddedResource Include="Content\images\dn.png" />
+    <EmbeddedResource Include="Content\images\fhbg.gif" />
+    <EmbeddedResource Include="Content\images\first.gif" />
+    <EmbeddedResource Include="Content\images\hl.png" />
+    <EmbeddedResource Include="Content\images\last.gif" />
+    <EmbeddedResource Include="Content\images\line.gif" />
+    <EmbeddedResource Include="Content\images\load.gif" />
+    <EmbeddedResource Include="Content\images\load.png" />
+    <EmbeddedResource Include="Content\images\magnifier.png" />
+    <EmbeddedResource Include="Content\images\next.gif" />
+    <EmbeddedResource Include="Content\images\prev.gif" />
+    <EmbeddedResource Include="Content\images\up.png" />
+    <EmbeddedResource Include="Content\images\uup.png" />
+    <EmbeddedResource Include="Content\images\wbg.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
