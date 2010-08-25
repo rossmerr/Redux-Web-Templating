@@ -8,8 +8,8 @@
     <ProjectGuid>{5A78BF9C-7B93-4719-AABB-12174A327C21}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Reduc.Web.jQuery.Timepicker</RootNamespace>
-    <AssemblyName>Reduc.Web.jQuery.Timepicker</AssemblyName>
+    <RootNamespace>Redux.Web.jQuery.Timepicker</RootNamespace>
+    <AssemblyName>Redux.Web.jQuery.Timepicker</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

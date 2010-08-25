@@ -1,20 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Web.Mvc;
 using System.Web.Mvc.Html;
+using Redux.Web.Templating;
 
-namespace Reduc.Web.jQuery.Timepicker
+namespace Redux.Web.jQuery.Timepicker
 {
     public static class TimepickerExtensions
     {
         public static string TimepickerFor<TModel, TValue>(this HtmlHelper<TModel> htmlHelper, Expression<Func<TModel, TValue>> expression)
         {
+            var name = ExpressionHelper.GetExpressionText(expression);
+            name = htmlHelper.ViewContext.ViewData.TemplateInfo.GetFullHtmlFieldName(name);
+            name = Identifier.GenerateId(name);
+
             htmlHelper.ViewContext.Writer.WriteLine(htmlHelper.TextBoxFor(expression).ToHtmlString());
-            var target = ExpressionHelper.GetExpressionText(expression);
-            TimepickerWriter.Writer(htmlHelper, target);
+            TimepickerWriter.Writer(htmlHelper, name);
             return string.Empty;
         }
 

@@ -132,9 +132,9 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Reduc.Web.jQuery.Timepicker\Reduc.Web.jQuery.Timepicker.csproj">
+    <ProjectReference Include="..\Reduc.Web.jQuery.Timepicker\Redux.Web.jQuery.Timepicker.csproj">
       <Project>{5A78BF9C-7B93-4719-AABB-12174A327C21}</Project>
-      <Name>Reduc.Web.jQuery.Timepicker</Name>
+      <Name>Redux.Web.jQuery.Timepicker</Name>
     </ProjectReference>
     <ProjectReference Include="..\Redux.Web.Html\Redux.Web.Html.csproj">
       <Project>{5C801840-C1F1-46FC-84BD-EA52F7BFB9E8}</Project>

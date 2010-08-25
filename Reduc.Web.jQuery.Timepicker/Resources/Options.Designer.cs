@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Reduc.Web.jQuery.Timepicker.Resources {
+namespace Redux.Web.jQuery.Timepicker.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Reduc.Web.jQuery.Timepicker.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Reduc.Web.jQuery.Timepicker.Resources.Options", typeof(Options).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Redux.Web.jQuery.Timepicker.Resources.Options", typeof(Options).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using Redux.Web.Templating;
 
-namespace Reduc.Web.jQuery.Timepicker
+namespace Redux.Web.jQuery.Timepicker
 {
     public class TimepickerWriter
     {

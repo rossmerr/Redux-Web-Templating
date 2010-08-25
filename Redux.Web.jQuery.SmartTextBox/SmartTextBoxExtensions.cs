@@ -14,9 +14,12 @@ namespace Redux.Web.jQuery.SmartTextBox
     {
         public static ISmartTextBoxConfiguration<TModel> SmartTextBoxFor<TModel, TValue>(this HtmlHelper<TModel> htmlHelper, Expression<Func<TModel, TValue>> expression)
         {
+            var name = ExpressionHelper.GetExpressionText(expression);
+            name = htmlHelper.ViewContext.ViewData.TemplateInfo.GetFullHtmlFieldName(name);
+            name = Identifier.GenerateId(name);
+
             htmlHelper.ViewContext.Writer.WriteLine(htmlHelper.TextBoxFor(expression).ToHtmlString());
-            var target = ExpressionHelper.GetExpressionText(expression);
-            return  new SmartTextBoxConfiguration<TModel>(htmlHelper, target);
+            return new SmartTextBoxConfiguration<TModel>(htmlHelper, name);
         }
 
         public static string SmartTextBoxApi(this HtmlHelper htmlHelper)

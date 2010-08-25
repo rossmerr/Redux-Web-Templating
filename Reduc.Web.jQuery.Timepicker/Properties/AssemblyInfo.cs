@@ -6,11 +6,11 @@ using System.Web.UI;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Reduc.Web.jQuery.Timepicker")]
+[assembly: AssemblyTitle("Redux.Web.jQuery.Timepicker")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("Reduc.Web.jQuery.Timepicker")]
+[assembly: AssemblyProduct("Redux.Web.jQuery.Timepicker")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2010")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -35,4 +35,4 @@ using System.Web.UI;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: WebResource("Reduc.Web.jQuery.Timepicker.Script.jquery-ui-timepicker-addon-0.5.js", "text/javascript")]
+[assembly: WebResource("Redux.Web.jQuery.Timepicker.Script.jquery-ui-timepicker-addon-0.5.js", "text/javascript")]
