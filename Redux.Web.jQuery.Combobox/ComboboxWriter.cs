@@ -13,11 +13,10 @@ namespace Redux.Web.jQuery.Combobox
         {
             using (var script = new TemplateScript(htmlHelper.ViewContext, htmlHelper.ViewContext.Writer, htmlHelper.ViewContext.FormContext))
             {
-                script.WriteLine(string.Format("$('#{0}').{1} (", target, Resources.Options.Combobox));
+                script.WriteLine(string.Format("$('#{0}').{1} ();", target, Resources.Options.Combobox));
                 script.WriteLine("$(\"#toggle\").click(function() {");
                 script.WriteLine(string.Format("$(\"#{0}\").toggle();", target));
                 script.WriteLine("});");
-                script.WriteLine(");");
             }
         }
     }

@@ -30,5 +30,13 @@ namespace Redux.Web.jQuery.Combobox
             ComboboxWriter.Writer(htmlHelper, name);
             return string.Empty;
         }
+
+        public static string ComboboxApi(this HtmlHelper htmlHelper)
+        {
+            var script = new TagBuilder("script");
+            script.MergeAttribute("type", "text/javascript");
+            script.MergeAttribute("src", "/Combobox/Api");
+            return script.ToString(TagRenderMode.Normal);
+        }
     }
 }
