@@ -61,6 +61,15 @@ namespace Redux.Web.jQuery.Combobox.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to chainSelect.
+        /// </summary>
+        internal static string chainSelect {
+            get {
+                return ResourceManager.GetString("chainSelect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to combobox.
         /// </summary>
         internal static string Combobox {
