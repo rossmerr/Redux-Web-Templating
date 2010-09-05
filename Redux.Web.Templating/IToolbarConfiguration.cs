@@ -6,10 +6,8 @@ using System.Text;
 
 namespace Redux.Web.Templating
 {
-    public interface IToolbarConfiguration
+    public interface IToolbarConfiguration : IButtonConfiguration
     {
-        IList<IButtonSeparator> GetButtons();
-
         void AddButton(string label, string bClass, string onpress);
         void AddSeparator();
     }

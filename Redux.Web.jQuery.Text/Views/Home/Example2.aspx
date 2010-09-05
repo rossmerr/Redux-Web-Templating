@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<TestObject>" %>
 <%@ Import Namespace="Redux.Web.jQuery.Text.Models" %>
-<%@ Import Namespace="Reduc.Web.jQuery.Timepicker" %>
 <%@ Import Namespace="Redux.Web.jQuery.Timepicker" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">

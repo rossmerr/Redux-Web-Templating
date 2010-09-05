@@ -15,21 +15,12 @@ namespace Redux.Web.jQuery.Text.Controllers
     {
         public ActionResult Example1()
         {
-            var obj = new List<TestObject>()
-                          {
-                              new TestObject()
-                                  {
-                                      One = "test",
-                                      Two = "two"
-                                  },
-                              new TestObject()
-                                  {
-                                      One = "test",
-                                      Two = "two"
-                                  }
-                          };
+            return View();        
+        }
 
-            return View(obj);        
+        public ActionResult Partial()
+        {
+            return PartialView();
         }
 
         public ActionResult Example2()
