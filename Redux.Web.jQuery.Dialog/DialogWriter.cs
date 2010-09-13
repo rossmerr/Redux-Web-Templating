@@ -90,40 +90,40 @@ namespace Redux.Web.jQuery.Dialog
 
                     if (dialogConfiguration.ButtonsInternal != null)
                     {
-                        using (var buttonsMode = new OptionsArray(htmlHelper.ViewContext.Writer, Resources.Options.Buttons))
-                        {
+                        //using (var buttonsMode = new OptionsArray(htmlHelper.ViewContext.Writer, Resources.Options.Buttons))
+                        //{
                             var buttons = new ButtonToolbar();
                             dialogConfiguration.ButtonsInternal(buttons);
 
-                            buttonsMode.Write(Resources.Options.Buttons  + ": {");
+                            optionsArray.WriteLine(Resources.Options.Buttons  + ": {");
 
                             foreach (var column in buttons.GetButtons())
                             {
-                                using (var columnArray = new ScriptArray(htmlHelper.ViewContext.Writer))
-                                {
+                                
+
                                     var btn = column as Button;
 
                                     if (!string.IsNullOrEmpty(btn.Label))
-                                        columnArray.WriteLine(String.Format("'{0}': {1}", btn.Label, btn.OnPressCallback));
-                                }
+                                        optionsArray.WriteLine(String.Format("{0}:  function() {2} {1} {3}", btn.Label, btn.OnPressCallback, "{", "}"));
+                                
 
                                 if (column != buttons.GetButtons().Last())
                                 {
-                                    buttonsMode.Write(",");
+                                    optionsArray.WriteLine(",");
                                 }
                             }
 
-                            buttonsMode.Write("}");
-                        }
+                            optionsArray.WriteLine("}");
+                        //}
 
                         optionsArray.WriteLine(",");
                     }
 
                     // Removes the last comma
-                    if (optionsArray.Length > 4)
-                    {
-                        optionsArray.Remove((optionsArray.Length - 4), 1);
-                    }
+                    //if (optionsArray.Length > 4)
+                    //{
+                    //    optionsArray.Remove((optionsArray.Length - 4), 1);
+                    //}
                 }
 
                 script.WriteLine(");");

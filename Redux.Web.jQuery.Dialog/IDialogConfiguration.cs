@@ -10,7 +10,7 @@ namespace Redux.Web.jQuery.Dialog
     {
         IDialogConfiguration Disabled(bool value);
         IDialogConfiguration AutoOpen(bool value);
-        IDialogConfiguration Buttons(Action<IButtonConfiguration> buttons);
+        IDialogConfiguration Buttons(Action<IDialogButtonConfiguration> buttons);
         IDialogConfiguration CloseOnEscape(bool value);
         IDialogConfiguration CloseText(string value);
         IDialogConfiguration DialogClass(string value);

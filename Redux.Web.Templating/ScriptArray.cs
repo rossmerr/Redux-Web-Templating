@@ -10,29 +10,28 @@ namespace Redux.Web.Templating
     {
         protected TextWriter _writer;
 
-        protected StringBuilder _sb;
 
         public ScriptArray(TextWriter textWriter)
         {
-            _sb = new StringBuilder();
+
             _writer = textWriter;
             _writer.Write("{");
         }
 
         public void WriteLine(string line)
-        {           
-            _sb.AppendLine(line);
+        {
+            _writer.WriteLine(line);
         }
 
         public void WriteLine(string key, string value, RenderArrayMode mode)
         {
             if (mode == RenderArrayMode.Comma)
             {
-                _sb.AppendLine(string.Format("{0}: {1}, ", key, value));
+                _writer.WriteLine(string.Format("{0}: {1}, ", key, value));
             }
             else if (mode == RenderArrayMode.Empty)
             {
-                _sb.AppendLine(string.Format("{0}: {1} ", key, value));
+                _writer.WriteLine(string.Format("{0}: {1} ", key, value));
             }
         }
         
@@ -40,32 +39,32 @@ namespace Redux.Web.Templating
         {
             if (mode == RenderArrayMode.Comma)
             {
-                _sb.Append(string.Format("{0}: {1}, ", key, value));
+                _writer.Write(string.Format("{0}: {1}, ", key, value));
             }
             else if (mode == RenderArrayMode.Empty)
             {
-                _sb.Append(string.Format("{0}: {1} ", key, value));
+                _writer.Write(string.Format("{0}: {1} ", key, value));
             }           
         }
 
-        public void Remove(int startIndex, int length)
-        {            
-            _sb = _sb.Remove(startIndex, length);          
-        }
+        //public void Remove(int startIndex, int length)
+        //{            
+        //    _sb = _sb.Remove(startIndex, length);          
+        //}
 
-        public int Length
-        {
-            get { return _sb.Length; }
-        }
+        //public int Length
+        //{
+        //    get { return _sb.Length; }
+        //}
 
-        public override string ToString()
-        {
-            return _sb.ToString();
-        }
+        //public override string ToString()
+        //{
+        //    return _sb.ToString();
+        //}
 
         public void Dispose()
         {
-            _writer.Write(_sb);
+            //_writer.Write(_writer);
             _writer.WriteLine("}");
         }
     }

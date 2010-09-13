@@ -24,9 +24,20 @@ namespace Redux.Web.jQuery.Dialog
             return new DialogConfiguration(htmlHelper, target, routeValues);
         }
 
-        public static IDialogConfiguration Dialog(this HtmlHelper htmlHelper, string target, RouteValueDictionary routeValues, Postback postback)
+        public static string DialogOpener(this HtmlHelper htmlHelper, string target, string dialog)
         {
-            return new DialogConfiguration(htmlHelper, target, routeValues, postback);
+            var script = new TagBuilder("script");
+            script.MergeAttribute("type", "text/javascript");
+
+            var sb = new StringBuilder();
+            sb.AppendLine(string.Format("$('{0}').click(function() ", target));
+            sb.Append("{");
+            sb.AppendLine(string.Format("$('{0}').dialog('open');", dialog));
+            sb.AppendLine("return false;");
+            sb.AppendLine("})");
+
+            script.InnerHtml = sb.ToString();
+            return script.ToString(TagRenderMode.Normal);
         }
 
         public static string DialogForm(this HtmlHelper htmlHelper)

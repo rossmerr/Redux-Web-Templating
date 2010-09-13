@@ -8,11 +8,10 @@ namespace Redux.Web.jQuery.Flexigrid
 {
     public class Button : IButton
     {
-        public Button(string label, string bClass, string onpress)
+        public Button(string label, string bClass)
         {
             Label = label;
             BtnClass = bClass;
-            OnPressCallback = onpress;
         }
 
         public string Label

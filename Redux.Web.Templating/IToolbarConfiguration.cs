@@ -8,7 +8,7 @@ namespace Redux.Web.Templating
 {
     public interface IToolbarConfiguration : IButtonConfiguration
     {
-        void AddButton(string label, string bClass, string onpress);
+        void AddButton(string label, string bClass);
         void AddSeparator();
     }
 }

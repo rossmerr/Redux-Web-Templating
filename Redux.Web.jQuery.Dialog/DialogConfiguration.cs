@@ -12,7 +12,7 @@ namespace Redux.Web.jQuery.Dialog
     {
         public bool? DisabledInternal { get; protected set; }
         public bool? AutoOpenInternal { get; protected set; }
-        public Action<IButtonConfiguration> ButtonsInternal { get; protected set; }
+        public Action<IDialogButtonConfiguration> ButtonsInternal { get; protected set; }
         public bool? CloseOnEscapeInternal { get; protected set; }
         public string CloseTextInternal { get; protected set; }
         public string DialogClassInternal { get; protected set; }
@@ -83,7 +83,7 @@ namespace Redux.Web.jQuery.Dialog
             return this;
         }
 
-        public IDialogConfiguration Buttons(Action<IButtonConfiguration> buttons)
+        public IDialogConfiguration Buttons(Action<IDialogButtonConfiguration> buttons)
         {
             ButtonsInternal = buttons;
             return this;

@@ -12,11 +12,17 @@
     <%= Html.DialogForm() %>
     <%= Html.DialogValidate() %>
 
+        <p id="opener">click me</p>
+
         <div id="dialog" title="Basic dialog">
-    	    <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+    	    <p>Loading</p>
         </div>
-        <%= Html.Dialog("#dialog", new { Controller = "Home", Action = "Partial" }).Buttons(buttons => {
-                                                                                                            buttons.AddButton("Create",string.Empty);
-                                                                                                        })%>
+        <%= Html.Dialog("#dialog", new { Controller = "Home", Action = "Partial" }).Buttons(buttons =>
+                                                                                                           {
+                                                                                                               buttons.AddButton("Cancel").Reset().Close();
+                                                                                                               buttons.AddButton("Create").Validate().Submit().Reset().Close();
+                                                                                                           }).AutoOpen(false)%>
+
+        <%= Html.DialogOpener("#opener", "#dialog") %>
 
 </asp:Content>

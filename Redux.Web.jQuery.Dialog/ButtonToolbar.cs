@@ -6,18 +6,32 @@ using Redux.Web.Templating;
 
 namespace Redux.Web.jQuery.Dialog
 {
-    public class ButtonToolbar : IButtonConfiguration
+    public class ButtonToolbar : IDialogButtonConfiguration
     {
-        private List<IButtonSeparator> buttons = new List<IButtonSeparator>();
+        private List<IDialogButton> buttons = new List<IDialogButton>();
+
 
         public IList<IButtonSeparator> GetButtons()
+        {
+            return buttons.ToList<IButtonSeparator>();
+
+        }
+
+        IDialogButton IDialogButtonConfiguration.AddButton(string label)
+        {
+            var btn = new Button(label);
+            buttons.Add(btn);
+            return btn;
+        }
+
+        IList<IDialogButton> IDialogButtonConfiguration.GetButtons()
         {
             return buttons;
         }
 
-        public void AddButton(string label, string onpress)
+        public void AddButton(string label)
         {
-            buttons.Add(new Button(label,  onpress));
+            AddButton(label);
         }
     }
 }

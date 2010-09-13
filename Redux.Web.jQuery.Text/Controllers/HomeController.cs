@@ -20,7 +20,13 @@ namespace Redux.Web.jQuery.Text.Controllers
 
         public ActionResult Partial()
         {
-            return PartialView();
+            return PartialView(new TestObject());
+        }
+
+        [HttpPost]
+        public ActionResult Partial(TestObject id)
+        {
+            return PartialView(id);
         }
 
         public ActionResult Example2()

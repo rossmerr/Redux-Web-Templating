@@ -9,6 +9,5 @@ namespace Redux.Web.Templating
     {
         string Label { get;}
         string BtnClass { get; }
-        string OnPressCallback { get; }
     }
 }

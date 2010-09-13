@@ -49,6 +49,8 @@
     <Compile Include="DialogController.cs" />
     <Compile Include="DialogExtensions.cs" />
     <Compile Include="DialogWriter.cs" />
+    <Compile Include="IDialogButton.cs" />
+    <Compile Include="IDialogButtonConfiguration.cs" />
     <Compile Include="IDialogConfiguration.cs" />
     <Compile Include="Postback.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

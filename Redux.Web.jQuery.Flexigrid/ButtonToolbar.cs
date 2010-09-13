@@ -15,14 +15,14 @@ namespace Redux.Web.jQuery.Flexigrid
             return buttons;
         }
 
-        public void AddButton(string label, string onpress)
+        public void AddButton(string label)
         {
-            buttons.Add(new Button(label, string.Empty, onpress));
+            buttons.Add(new Button(label, string.Empty));
         }
 
-        public void AddButton(string label, string bClass, string onpress)
+        public void AddButton(string label, string bClass)
         {
-            buttons.Add(new Button(label, bClass, onpress));
+            buttons.Add(new Button(label, bClass));
         }
 
         public void AddSeparator()

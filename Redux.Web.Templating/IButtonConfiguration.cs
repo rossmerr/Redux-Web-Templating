@@ -8,6 +8,6 @@ namespace Redux.Web.Templating
     public interface IButtonConfiguration
     {
         IList<IButtonSeparator> GetButtons();
-        void AddButton(string label, string onpress);
+        void AddButton(string label);
     }
 }
