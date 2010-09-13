@@ -6,7 +6,7 @@ using Redux.Web.Templating;
 
 namespace Redux.Web.jQuery.Flexigrid
 {
-    public class ButtonToolbar : IToolbarConfiguration
+    public class ButtonToolbar : IFlexigridToolbarConfiguration
     {
         private List<IButtonSeparator> buttons = new List<IButtonSeparator>();
 
@@ -28,6 +28,11 @@ namespace Redux.Web.jQuery.Flexigrid
         public void AddSeparator()
         {
             buttons.Add(new ButtonSeparator());
+        }
+
+        public void AddButton(string label, string bClass, string pressCallback)
+        {
+            buttons.Add(new Button(label, bClass, pressCallback));
         }
     }
 }

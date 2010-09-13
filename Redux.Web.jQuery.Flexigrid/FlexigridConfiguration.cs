@@ -16,7 +16,7 @@ namespace Redux.Web.jQuery.Flexigrid
     {
         public Action<IDataTableConfiguration<TModel>> Columns { get; protected set; }
 
-        public Action<IToolbarConfiguration> ButtonsInternal { get; protected set; }
+        public Action<IFlexigridToolbarConfiguration> ButtonsInternal { get; protected set; }
         public Action<ISearchConfiguration<TModel>> SearchItemsInternal { get; protected set; }
         protected RouteValueDictionary _url { get; set; }
         public DataType? DataTypeInternal { get; protected set; }
@@ -63,7 +63,7 @@ namespace Redux.Web.jQuery.Flexigrid
             }
         }
 
-        public IFlexigridConfiguration<TModel> Buttons(Action<IToolbarConfiguration> buttons)
+        public IFlexigridConfiguration<TModel> Buttons(Action<IFlexigridToolbarConfiguration> buttons)
         {
             ButtonsInternal = buttons;
             return this;

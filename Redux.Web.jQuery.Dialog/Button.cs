@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Web.Routing;
 using Redux.Web.Templating;
 
 namespace Redux.Web.jQuery.Dialog
 {
-    public class Button : IDialogButton
+    public class Button : IDialogButtonSubmit
     {
         public Button(string label)
         {
@@ -43,7 +44,57 @@ namespace Redux.Web.jQuery.Dialog
 
                 if (IsSubmit)
                 {
-                    sb.AppendLine("$form.ajaxSubmit();");
+                    if (HasFormOptions && string.IsNullOrEmpty(OptionsInternal))
+                    {
+                        sb.AppendLine("var options = { ");
+
+                        if (!string.IsNullOrEmpty(target))
+                        {
+                            sb.AppendLine(string.Format("{1}: '{0}', ", target, Resources.Form.Target));
+                        }
+
+                        if (!string.IsNullOrEmpty(beforeSubmit))
+                        {
+                            sb.AppendLine(string.Format("{1}: '{0}', ", beforeSubmit, Resources.Form.Target));
+                        }
+
+                        if (!string.IsNullOrEmpty(beforeSubmit))
+                        {
+                            sb.AppendLine(string.Format("{1}: '{0}', ", success, Resources.Form.Target));
+                        }
+
+                        if (DataInternal.Count() > 0)
+                        {
+                            sb.AppendLine(string.Format("{0} : ", Resources.Form.Data));
+                            sb.Append("{");
+
+                            foreach(var item in DataInternal)
+                            {
+                                sb.AppendLine(string.Format("{0} : {1}", item.Key, item.Value));
+
+                                if (item.Key != DataInternal.Last().Key)
+                                {
+                                    sb.Append(",");
+                                }
+                            }
+
+                            sb.AppendLine("},");
+
+                            sb.AppendLine(string.Format("{1}: '{0}', ", success, Resources.Form.Target));
+                        }
+
+                        sb.AppendLine("};");
+                        
+                        sb.AppendLine("$form.ajaxSubmit(options);");                       
+                    } 
+                    else if (!string.IsNullOrEmpty(OptionsInternal))
+                    {
+                        sb.AppendLine(string.Format("$form.ajaxSubmit({0});", OptionsInternal)); 
+                    }
+                    else
+                    {
+                        sb.AppendLine("$form.ajaxSubmit();");
+                    }
                 }
 
                 if (!string.IsNullOrEmpty(function))
@@ -89,19 +140,18 @@ namespace Redux.Web.jQuery.Dialog
             return this;            
         }
 
-        private bool IsSubmit
-        {
-            get;
-            set;
-        }
-
-        public IDialogButton Submit()
+        IDialogButtonSubmit IDialogButton.Submit()
         {
             IsUsingForm = true;
             IsSubmit = true;
             return this;
         }
 
+        private bool IsSubmit
+        {
+            get;
+            set;
+        }
 
         private bool IsReset
         {
@@ -127,18 +177,74 @@ namespace Redux.Web.jQuery.Dialog
             return this;
         }
 
-        private string _function;
-
         private string function
         {
-            get { return _function; }
-            set { _function = value; }
-        }
+            get; set; }
 
         public IDialogButton Function(string function)
         {
             this.function = function;
             return this;
         }
+
+        private bool HasFormOptions { get; set; }
+
+        private string target
+        {
+            get; set; 
+        }
+
+        public IDialogButtonSubmit Target(string value)
+        {
+            HasFormOptions = true;
+            target = value;
+            return this;
+        }
+
+        private string beforeSubmit
+        {
+            get;
+            set;
+        }
+
+        public IDialogButtonSubmit BeforeSubmit(string value)
+        {
+            HasFormOptions = true;
+            beforeSubmit = value;
+            return this;
+        }
+
+        private string success { get; set; }
+
+        public IDialogButtonSubmit Success(string value)
+        {
+            HasFormOptions = true;
+            success = value;
+            return this;
+        }
+
+        public IDialogButtonSubmit Data(object value)
+        {
+            return Data(new RouteValueDictionary(value));
+        }
+
+        private RouteValueDictionary DataInternal { get; set; }
+
+        public IDialogButtonSubmit Data(IDictionary<string, object> value)
+        {
+            HasFormOptions = true;
+            DataInternal = (value == null) ? new RouteValueDictionary() : new RouteValueDictionary(value);
+            return this;
+        }
+
+
+        private string OptionsInternal { get; set;}
+
+        public IDialogButtonSubmit Options(string value)
+        {
+            OptionsInternal = value;
+            return this;
+        }
+
     }
 }

@@ -58,8 +58,10 @@
     <Compile Include="FlexigridWriter.cs" />
     <Compile Include="ControllerExtension.cs" />
     <Compile Include="FlexigridExtension.cs" />
+    <Compile Include="IFlexigridButton.cs" />
     <Compile Include="IFlexigridConfiguration.cs" />
     <Compile Include="IFlexigridPagerConfiguration.cs" />
+    <Compile Include="IFlexigridToolbarConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Options.Designer.cs">
       <AutoGen>True</AutoGen>

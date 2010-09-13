@@ -11,7 +11,7 @@ namespace Redux.Web.jQuery.Flexigrid
 {
     public interface IFlexigridConfiguration<TModel>
     {
-        IFlexigridConfiguration<TModel> Buttons(Action<IToolbarConfiguration> buttons);
+        IFlexigridConfiguration<TModel> Buttons(Action<IFlexigridToolbarConfiguration> buttons);
         IFlexigridConfiguration<TModel> SearchItems(Action<ISearchConfiguration<TModel>> searchItems);
 
         IFlexigridConfiguration<TModel> Url(object url);

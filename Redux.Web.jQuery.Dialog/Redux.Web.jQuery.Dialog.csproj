@@ -51,9 +51,15 @@
     <Compile Include="DialogWriter.cs" />
     <Compile Include="IDialogButton.cs" />
     <Compile Include="IDialogButtonConfiguration.cs" />
+    <Compile Include="IDialogButtonSubmit.cs" />
     <Compile Include="IDialogConfiguration.cs" />
     <Compile Include="Postback.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Form.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Form.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\Options.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -67,6 +73,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\Form.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Form.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Options.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Options.Designer.cs</LastGenOutput>

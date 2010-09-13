@@ -6,12 +6,19 @@ using Redux.Web.Templating;
 
 namespace Redux.Web.jQuery.Flexigrid
 {
-    public class Button : IButton
+    public class Button : IFlexigridButton
     {
         public Button(string label, string bClass)
         {
             Label = label;
             BtnClass = bClass;
+        }
+
+        public Button(string label, string bClass, string pressCallback)
+        {
+            Label = label;
+            BtnClass = bClass;
+            OnPressCallback = pressCallback;
         }
 
         public string Label
