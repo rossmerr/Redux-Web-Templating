@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Web.Routing;
 using Redux.Web.Templating;
 
 namespace Redux.Web.jQuery.Dialog
@@ -29,5 +30,14 @@ namespace Redux.Web.jQuery.Dialog
         IDialogConfiguration Title(string value);
         IDialogConfiguration Width(int value);
         IDialogConfiguration ZIndex(int value);
+
+        //events
+        IDialogConfiguration OnOpen(string value);
+        IDialogConfiguration OnOpen(object routeValues);
+        IDialogConfiguration OnOpen(RouteValueDictionary routeValues);
+
+        IDialogConfiguration OnClose(string value);
+        IDialogConfiguration OnClose(object routeValues);
+        IDialogConfiguration OnClose(RouteValueDictionary routeValues);
     }
 }

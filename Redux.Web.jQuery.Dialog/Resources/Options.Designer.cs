@@ -88,6 +88,15 @@ namespace Redux.Web.jQuery.Dialog.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to close.
+        /// </summary>
+        internal static string Close {
+            get {
+                return ResourceManager.GetString("Close", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to closeOnEscape.
         /// </summary>
         internal static string CloseOnEscape {
@@ -201,6 +210,15 @@ namespace Redux.Web.jQuery.Dialog.Resources {
         internal static string Modal {
             get {
                 return ResourceManager.GetString("Modal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to open.
+        /// </summary>
+        internal static string Open {
+            get {
+                return ResourceManager.GetString("Open", resourceCulture);
             }
         }
         

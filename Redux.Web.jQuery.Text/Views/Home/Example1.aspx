@@ -21,7 +21,10 @@
                                                                                                            {
                                                                                                                buttons.AddButton("Cancel").Reset().Close();
                                                                                                                buttons.AddButton("Create").Validate().Submit().Reset().Close();
-                                                                                                           }).AutoOpen(false)%>
+                                                                                                           })
+                                                                                                            .AutoOpen(false)
+                                                                                                            .OnOpen(new { Controller = "Home", Action = "PartialTwo" })
+                                                                                                            .OnClose(new { Controller = "Home", Action = "PartialThree" })%>
 
         <%= Html.DialogOpener("#opener", "#dialog") %>
 

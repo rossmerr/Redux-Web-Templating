@@ -29,6 +29,27 @@ namespace Redux.Web.jQuery.Text.Controllers
             return PartialView(id);
         }
 
+
+
+        public ActionResult PartialTwo()
+        {
+            return PartialView(new TestObject());
+        }
+
+
+
+        [HttpPost]
+        public ActionResult PartialTwo(TestObject id)
+        {
+            return PartialView(id);
+        }
+
+        [HttpGet]
+        public string PartialThree()
+        {
+            return string.Empty;
+        }
+
         public ActionResult Example2()
         {
 

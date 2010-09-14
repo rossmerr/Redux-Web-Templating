@@ -88,6 +88,41 @@ namespace Redux.Web.jQuery.Dialog
                     if (dialogConfiguration.ZIndexInternal.HasValue)
                         optionsArray.WriteLine(Resources.Options.ZIndex, string.Format("{0}", dialogConfiguration.ZIndexInternal), RenderArrayMode.Comma);
 
+                    if (!string.IsNullOrEmpty(dialogConfiguration.OpenInternal))
+                    {
+                        optionsArray.WriteLine(Resources.Options.Open, string.Format("{0}", dialogConfiguration.OpenInternal),
+                                               RenderArrayMode.Comma);
+                    }
+                    else if (!string.IsNullOrEmpty(dialogConfiguration.OpenUrlInternal))
+                    {
+                        var sb = new StringBuilder();
+                        sb.AppendLine("function(event, ui) {");
+                        sb.AppendLine(string.Format("$.get('{0}', ", dialogConfiguration.OpenUrlInternal));
+                        sb.Append("{}, callback);");
+                        sb.AppendLine("}");
+
+                        optionsArray.WriteLine(Resources.Options.Open, sb.ToString(), RenderArrayMode.Comma);
+                    }
+
+                    if (!string.IsNullOrEmpty(dialogConfiguration.CloseInternal))
+                    {
+                        optionsArray.WriteLine(Resources.Options.Close, string.Format("{0}", dialogConfiguration.CloseInternal),
+                                               RenderArrayMode.Comma);
+                    }
+                    else if (!string.IsNullOrEmpty(dialogConfiguration.CloseUrlInternal))
+                    {
+                        var sb = new StringBuilder();
+                        sb.AppendLine("function(event, ui) {");
+                        sb.AppendLine(string.Format("$.get('{0}', ", dialogConfiguration.CloseUrlInternal));
+                        sb.Append("{}, callback);");
+                        sb.AppendLine("}");
+
+                        optionsArray.WriteLine(Resources.Options.Close, sb.ToString(), RenderArrayMode.Comma);
+                    }
+
+                    if (!string.IsNullOrEmpty(dialogConfiguration.CloseInternal))
+                        optionsArray.WriteLine(Resources.Options.Close, string.Format("{0}", dialogConfiguration.CloseInternal), RenderArrayMode.Comma);
+
                     if (dialogConfiguration.ButtonsInternal != null)
                     {
                         //using (var buttonsMode = new OptionsArray(htmlHelper.ViewContext.Writer, Resources.Options.Buttons))
@@ -98,9 +133,7 @@ namespace Redux.Web.jQuery.Dialog
                             optionsArray.WriteLine(Resources.Options.Buttons  + ": {");
 
                             foreach (var column in buttons.GetButtons())
-                            {
-                                
-
+                            {                                
                                     var btn = column as Button;
 
                                     if (!string.IsNullOrEmpty(btn.Label))

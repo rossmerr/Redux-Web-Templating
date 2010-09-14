@@ -98,6 +98,7 @@
     <Content Include="Views\Home\Example3.aspx" />
     <Content Include="Views\Home\Example4.aspx" />
     <Content Include="Views\Home\Partial.ascx" />
+    <Content Include="Views\Home\PartialTwo.ascx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

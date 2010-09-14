@@ -32,6 +32,11 @@ namespace Redux.Web.jQuery.Dialog
         public int? WidthInternal { get; protected set; }
         public int? ZIndexInternal { get; protected set; }
 
+        public string OpenInternal { get; protected set; }
+        public string CloseInternal { get; protected set; }
+        protected RouteValueDictionary _openUrl { get; set; }
+        protected RouteValueDictionary _closeUrl { get; set; }
+
         protected RouteValueDictionary _url { get; set; }
         public string Target { get; protected set; }
         protected Postback _postback { get; set; }
@@ -66,6 +71,32 @@ namespace Redux.Web.jQuery.Dialog
                 {
                     var urlHelper = new UrlHelper(_htmlHelper.ViewContext.RequestContext);
                     return urlHelper.RouteUrl(_url);
+                }
+                return string.Empty;
+            }
+        }
+
+        public string OpenUrlInternal
+        {
+            get
+            {
+                if (_openUrl != null)
+                {
+                    var urlHelper = new UrlHelper(_htmlHelper.ViewContext.RequestContext);
+                    return urlHelper.RouteUrl(_openUrl);
+                }
+                return string.Empty;
+            }
+        }
+
+        public string CloseUrlInternal
+        {
+            get
+            {
+                if (_closeUrl != null)
+                {
+                    var urlHelper = new UrlHelper(_htmlHelper.ViewContext.RequestContext);
+                    return urlHelper.RouteUrl(_closeUrl);
                 }
                 return string.Empty;
             }
@@ -194,6 +225,40 @@ namespace Redux.Web.jQuery.Dialog
         public IDialogConfiguration ZIndex(int value)
         {
             ZIndexInternal = value;
+            return this;
+        }
+
+        public IDialogConfiguration OnOpen(string value)
+        {
+            OpenInternal = value;
+            return this;
+        }
+
+        public IDialogConfiguration OnOpen(object routeValues)
+        {
+            return OnOpen(new RouteValueDictionary(routeValues));
+        }
+
+        public IDialogConfiguration OnOpen(RouteValueDictionary routeValues)
+        {
+            _openUrl = routeValues;
+            return this;
+        }
+
+        public IDialogConfiguration OnClose(string value)
+        {
+            CloseInternal = value;
+            return this;
+        }
+
+        public IDialogConfiguration OnClose(object routeValues)
+        {
+            return OnClose(new RouteValueDictionary(routeValues));
+        }
+
+        public IDialogConfiguration OnClose(RouteValueDictionary routeValues)
+        {
+            _closeUrl = routeValues;
             return this;
         }
 

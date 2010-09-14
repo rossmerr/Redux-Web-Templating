@@ -126,6 +126,9 @@
   <data name="CallbackFunction" xml:space="preserve">
     <value>callback</value>
   </data>
+  <data name="Close" xml:space="preserve">
+    <value>close</value>
+  </data>
   <data name="CloseOnEscape" xml:space="preserve">
     <value>closeOnEscape</value>
   </data>
@@ -164,6 +167,9 @@
   </data>
   <data name="Modal" xml:space="preserve">
     <value>modal</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>open</value>
   </data>
   <data name="Position" xml:space="preserve">
     <value>position</value>
