@@ -34,32 +34,33 @@ namespace Redux.Web.jQuery.Dialog
 
                     if (!string.IsNullOrEmpty(btn.BeforeSubmitInternal))
                     {
-                        sb.AppendLine(string.Format("{1}: '{0}', ", btn.BeforeSubmitInternal, Resources.Form.Target));
+                        sb.AppendLine(string.Format("{1}: {0}, ", btn.BeforeSubmitInternal, Resources.Form.BeforeSubmit));
                     }
 
-                    if (!string.IsNullOrEmpty(btn.BeforeSubmitInternal))
+                    if (!string.IsNullOrEmpty(btn.SuccessInternal))
                     {
-                        sb.AppendLine(string.Format("{1}: '{0}', ", btn.SuccessInternal, Resources.Form.Target));
+                        sb.AppendLine(string.Format("{1}: {0}, ", btn.SuccessInternal, Resources.Form.Success));
                     }
 
-                    if (btn.DataInternal.Count() > 0)
+                    if (btn.DataInternal != null)
                     {
-                        sb.AppendLine(string.Format("{0} : ", Resources.Form.Data));
-                        sb.Append("{");
-
-                        foreach (var item in btn.DataInternal)
+                        if (btn.DataInternal.Count() > 0)
                         {
-                            sb.AppendLine(string.Format("{0} : {1}", item.Key, item.Value));
+                            sb.AppendLine(string.Format("{0} : ", Resources.Form.Data));
+                            sb.Append("{");
 
-                            if (item.Key != btn.DataInternal.Last().Key)
+                            foreach (var item in btn.DataInternal)
                             {
-                                sb.Append(",");
+                                sb.AppendLine(string.Format("{0} : {1}", item.Key, item.Value));
+
+                                if (item.Key != btn.DataInternal.Last().Key)
+                                {
+                                    sb.Append(",");
+                                }
                             }
+
+                            sb.AppendLine("},");
                         }
-
-                        sb.AppendLine("},");
-
-                        sb.AppendLine(string.Format("{1}: '{0}', ", btn.SuccessInternal, Resources.Form.Target));
                     }
 
                     sb.AppendLine("};");

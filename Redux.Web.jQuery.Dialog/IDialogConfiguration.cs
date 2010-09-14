@@ -39,5 +39,6 @@ namespace Redux.Web.jQuery.Dialog
         IDialogConfiguration OnClose(string value);
         IDialogConfiguration OnClose(object routeValues);
         IDialogConfiguration OnClose(RouteValueDictionary routeValues);
+
     }
 }
