@@ -40,7 +40,7 @@ namespace Redux.Web.jQuery.Dialog
             return script.ToString(TagRenderMode.Normal);
         }
 
-        public static string DialogForm(this HtmlHelper htmlHelper)
+        public static string DialogFormApi(this HtmlHelper htmlHelper)
         {
             var script = new TagBuilder("script");
             script.MergeAttribute("type", "text/javascript");
@@ -48,7 +48,7 @@ namespace Redux.Web.jQuery.Dialog
             return script.ToString(TagRenderMode.Normal);
         }
 
-        public static string DialogValidate(this HtmlHelper htmlHelper)
+        public static string DialogValidateApi(this HtmlHelper htmlHelper)
         {
             var script = new TagBuilder("script");
             script.MergeAttribute("type", "text/javascript");

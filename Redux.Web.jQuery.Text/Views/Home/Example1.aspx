@@ -9,8 +9,8 @@
 
     
 
-    <%= Html.DialogForm() %>
-    <%= Html.DialogValidate() %>
+    <%= Html.DialogFormApi() %>
+    <%= Html.DialogValidateApi() %>
 
         <p id="opener">click me</p>
 
