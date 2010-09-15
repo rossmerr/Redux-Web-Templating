@@ -47,7 +47,7 @@ namespace Redux.Web.jQuery.Dialog
                         optionsArray.WriteLine(Resources.Options.Draggable, string.Format("{0}", dialogConfiguration.DraggableInternal.ToString().ToLower()), RenderArrayMode.Comma);
 
                     if (dialogConfiguration.HeightInternal.HasValue)
-                        optionsArray.WriteLine(Resources.Options.Height, string.Format("{0}", dialogConfiguration.HeightInternal), RenderArrayMode.Comma);
+                        optionsArray.WriteLine(Resources.Options.Height, string.Format("{0}", dialogConfiguration.HeightInternal.ToString().ToLower()), RenderArrayMode.Comma);
 
                     if (dialogConfiguration.HideInternal.HasValue)
                         optionsArray.WriteLine(Resources.Options.Hide, string.Format("{0}", dialogConfiguration.HideInternal.ToString().ToLower()), RenderArrayMode.Comma);
@@ -65,7 +65,7 @@ namespace Redux.Web.jQuery.Dialog
                         optionsArray.WriteLine(Resources.Options.MinWidth, string.Format("{0}", dialogConfiguration.MinWidthInternal), RenderArrayMode.Comma);
 
                     if (dialogConfiguration.ModalInternal.HasValue)
-                        optionsArray.WriteLine(Resources.Options.Modal, string.Format("{0}", dialogConfiguration.ModalInternal), RenderArrayMode.Comma);
+                        optionsArray.WriteLine(Resources.Options.Modal, string.Format("{0}", dialogConfiguration.ModalInternal.ToString().ToLower()), RenderArrayMode.Comma);
 
                     if (!string.IsNullOrEmpty(dialogConfiguration.PositionInternal))
                         optionsArray.WriteLine(Resources.Options.Position, string.Format("'{0}'", dialogConfiguration.PositionInternal.ToLower()), RenderArrayMode.Comma);
@@ -83,10 +83,10 @@ namespace Redux.Web.jQuery.Dialog
                         optionsArray.WriteLine(Resources.Options.Title, string.Format("'{0}'", dialogConfiguration.TitleInternal), RenderArrayMode.Comma);
 
                     if (dialogConfiguration.WidthInternal.HasValue)
-                        optionsArray.WriteLine(Resources.Options.Width, string.Format("{0}", dialogConfiguration.WidthInternal), RenderArrayMode.Comma);
+                        optionsArray.WriteLine(Resources.Options.Width, string.Format("{0}", dialogConfiguration.WidthInternal.Value.ToString().ToLower()), RenderArrayMode.Comma);
 
                     if (dialogConfiguration.ZIndexInternal.HasValue)
-                        optionsArray.WriteLine(Resources.Options.ZIndex, string.Format("{0}", dialogConfiguration.ZIndexInternal), RenderArrayMode.Comma);
+                        optionsArray.WriteLine(Resources.Options.ZIndex, string.Format("{0}", dialogConfiguration.ZIndexInternal.Value.ToString().ToLower()), RenderArrayMode.Comma);
 
                     if (!string.IsNullOrEmpty(dialogConfiguration.OpenInternal))
                     {

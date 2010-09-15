@@ -24,4 +24,13 @@
                                         }).UsePager().UseRp(false).Url(new { Controller = "Home", Action = "Example4" }).ShowTableToggleBtn().Width(400).Height(100).Title("test")%>
 
 
+
+
+    <%= Html.Flexigrid<TestObject>(Model, columns =>
+                                        {
+                                            columns.AddColumn(p => p.One).Width(150).Sortable(true);
+                                            columns.AddColumn(p => p.Two);
+                                        }).UsePager().UseRp(false).ShowTableToggleBtn().Width(400).Height(100).Title("test")%>
+
+
 </asp:Content>

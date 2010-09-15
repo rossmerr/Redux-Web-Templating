@@ -89,12 +89,12 @@ namespace Redux.Web.jQuery.Text.Controllers
                           {
                               new TestObject()
                                   {
-                                      One = "test",
+                                      One = "<span class='btn-edit'>Edit </span>",
                                       Two = "two"
                                   },
                               new TestObject()
                                   {
-                                      One = "test",
+                                      One = "<span class='btn-edit'>Edit </span>",
                                       Two = "two"
                                   }
                           };

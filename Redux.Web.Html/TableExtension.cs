@@ -32,5 +32,11 @@ namespace Redux.Web.Html
             return string.Empty;
         }
 
+        public static string Table<TModel>(this HtmlHelper htmlHelper, IEnumerable<TModel> collection,
+            Action<IDataTableConfiguration<TModel>> columns, IDictionary<string, object> htmlAttributes, bool header)
+        {
+            TableWriter.Writer<TModel>(htmlHelper, collection, columns, htmlAttributes, header);
+            return string.Empty;
+        }
     }
 }

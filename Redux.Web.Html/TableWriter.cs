@@ -12,6 +12,11 @@ namespace Redux.Web.Html
     {
         public static void Writer<TModel>(HtmlHelper htmlHelper, IEnumerable<TModel> collection, Action<IDataTableConfiguration<TModel>> columns, IDictionary<string, object> htmlAttributes)
         {
+            Writer(htmlHelper, collection, columns, htmlAttributes, true);
+        }
+
+        public static void Writer<TModel>(HtmlHelper htmlHelper, IEnumerable<TModel> collection, Action<IDataTableConfiguration<TModel>> columns, IDictionary<string, object> htmlAttributes, bool header)
+        {
             var table = new TagBuilder("table");
             table.MergeAttributes(htmlAttributes);
 
@@ -24,7 +29,7 @@ namespace Redux.Web.Html
 
                 var dataTableColumns = dataTable.GetColumns();
 
-                var delegates = new List<Delegate>(); 
+                var delegates = new List<Delegate>();
 
                 var tHead = new TagBuilder("thead");
 
@@ -41,14 +46,16 @@ namespace Redux.Web.Html
 
                     delegates.Add(dlgText);
 
-                    var th = new TagBuilder("th");
-                    th.SetInnerText(property);
-                    sbHead.AppendLine(th.ToString(TagRenderMode.Normal));                    
+                    var th = new TagBuilder("th") {InnerHtml = property};
+                    sbHead.AppendLine(th.ToString(TagRenderMode.Normal));
                 }
 
-                hRow.InnerHtml = sbHead.ToString();
-                tHead.InnerHtml = hRow.ToString(TagRenderMode.Normal);
-                table.InnerHtml = tHead.ToString(TagRenderMode.Normal);
+                if (header)
+                {
+                    hRow.InnerHtml = sbHead.ToString();
+                    tHead.InnerHtml = hRow.ToString(TagRenderMode.Normal);
+                    table.InnerHtml = tHead.ToString(TagRenderMode.Normal);
+                }
 
                 var tBody = new TagBuilder("tbody");
 
@@ -63,8 +70,7 @@ namespace Redux.Web.Html
                     foreach (var dlgText in delegates)
                     {
                         var text = dlgText.DynamicInvoke(row).ToString();
-                        var td = new TagBuilder("td");
-                        td.SetInnerText(text);
+                        var td = new TagBuilder("td") {InnerHtml = text};
                         sbData.Append(td.ToString(TagRenderMode.Normal));
                     }
 
@@ -74,7 +80,7 @@ namespace Redux.Web.Html
 
                 tBody.InnerHtml = sbBody.ToString();
 
-                table.InnerHtml = tHead.ToString(TagRenderMode.Normal) + tBody.ToString(TagRenderMode.Normal);
+                table.InnerHtml = table.InnerHtml + tBody.ToString(TagRenderMode.Normal);
             }
 
 

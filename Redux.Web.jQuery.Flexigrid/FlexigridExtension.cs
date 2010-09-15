@@ -30,7 +30,7 @@ namespace Redux.Web.jQuery.Flexigrid
            Action<IDataTableConfiguration<TModel>> columns, object htmlAttributes)
         {
             return htmlHelper.Flexigrid(collection, columns,
-                                 (IDictionary<string, object>) new RouteValueDictionary(htmlAttributes));
+                                 (IDictionary<string, object>)new RouteValueDictionary(htmlAttributes));
         }
 
         public static IFlexigridConfiguration<TModel> Flexigrid<TModel>(this HtmlHelper htmlHelper, IEnumerable<TModel> collection,
@@ -38,8 +38,7 @@ namespace Redux.Web.jQuery.Flexigrid
         {
             var id = GetId(htmlAttributes);
             
-            htmlHelper.Table(collection, columns, htmlAttributes);
-
+            htmlHelper.Table(collection, columns, htmlAttributes, false);
             return new FlexigridConfiguration<TModel>(htmlHelper, "#" + id, columns);
         }
 
