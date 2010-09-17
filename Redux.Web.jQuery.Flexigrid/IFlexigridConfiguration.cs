@@ -30,5 +30,7 @@ namespace Redux.Web.jQuery.Flexigrid
         IFlexigridConfiguration<TModel> SingleSelect(bool singleSelect);
 
         IFlexigridConfiguration<TModel> Title(string title);
+
+        IFlexigridConfiguration<TModel> DataType(DataType dataType);        
     }
 }

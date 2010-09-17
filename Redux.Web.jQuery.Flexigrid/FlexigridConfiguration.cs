@@ -77,7 +77,7 @@ namespace Redux.Web.jQuery.Flexigrid
 
         public IFlexigridConfiguration<TModel> Url(object url)
         {
-            return this.Url(new RouteValueDictionary(url), DataType.Json);
+            return this.Url(new RouteValueDictionary(url),Templating.DataType.Json);
         }
 
         public IFlexigridConfiguration<TModel> Url(object url, DataType dataType)
@@ -134,6 +134,13 @@ namespace Redux.Web.jQuery.Flexigrid
             TitleInternal = title;
             return this;
         }
+
+        public IFlexigridConfiguration<TModel> DataType(DataType dataType)
+        {
+            DataTypeInternal = dataType;
+            return this;
+        }
+
 
         public IFlexigridPagerConfiguration<TModel> UseRp(bool rp)
         {

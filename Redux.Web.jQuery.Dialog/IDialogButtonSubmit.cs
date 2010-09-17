@@ -10,6 +10,8 @@ namespace Redux.Web.jQuery.Dialog
     {
         IDialogButtonSubmit Target(string value);
 
+        IDialogButtonSubmit BeforeSerialize(string value);
+
         IDialogButtonSubmit BeforeSubmit(string value);
 
         IDialogButtonSubmit Success(string value);

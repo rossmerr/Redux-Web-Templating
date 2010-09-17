@@ -30,7 +30,12 @@
                                         {
                                             columns.AddColumn(p => p.One).Width(150).Sortable(true);
                                             columns.AddColumn(p => p.Two);
-                                        }).UsePager().UseRp(false).ShowTableToggleBtn().Width(400).Height(100).Title("test")%>
+                                        }).UsePager().UseRp(false).ShowTableToggleBtn().Width(500).Height(100).Title("test")%>
 
 
+    <%= Html.Flexigrid<TestObject>(Model, columns =>
+                                        {
+                                            columns.AddColumn(p => p.One).Width(150).Sortable(true);
+                                            columns.AddColumn(p => p.Two);
+                                        }).UsePager().UseRp(false).ShowTableToggleBtn().Width(500).Height(100).Title("test").DataType(Redux.Web.Templating.DataType.Json)%>
 </asp:Content>

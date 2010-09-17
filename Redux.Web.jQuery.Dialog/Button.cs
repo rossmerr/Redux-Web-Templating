@@ -12,6 +12,7 @@ namespace Redux.Web.jQuery.Dialog
         public string OptionsInternal { get; set; }
         public string FunctionInternal { get; set; }
         public string TargetInternal { get; set; }
+        public string BeforeSerializeInternal { get; set; }
         public string BeforeSubmitInternal { get; set; }
         public string SuccessInternal { get; set; }
         public RouteValueDictionary DataInternal { get; set; }
@@ -109,6 +110,13 @@ namespace Redux.Web.jQuery.Dialog
         {
             HasFormOptions = true;
             TargetInternal = value;
+            return this;
+        }
+
+        public IDialogButtonSubmit BeforeSerialize(string value)
+        {
+            HasFormOptions = true;
+            BeforeSerializeInternal = value;
             return this;
         }
 

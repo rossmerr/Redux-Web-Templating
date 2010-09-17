@@ -14,21 +14,21 @@ namespace Redux.Web.Html
         public static string Table<TModel>(this HtmlHelper htmlHelper, IEnumerable<TModel> collection,
             Action<IDataTableConfiguration<TModel>> columns)
         {
-            TableWriter.Writer<TModel>(htmlHelper, collection, columns, null);
+            TableWriter.Writer<TModel>(htmlHelper, collection, columns, null, true);
             return string.Empty;
         }
 
         public static string Table<TModel>(this HtmlHelper htmlHelper, IEnumerable<TModel> collection,
             Action<IDataTableConfiguration<TModel>> columns, object htmlAttributes)
         {
-            TableWriter.Writer<TModel>(htmlHelper, collection, columns, (IDictionary<string, object>)new RouteValueDictionary(htmlAttributes));
+            TableWriter.Writer<TModel>(htmlHelper, collection, columns, (IDictionary<string, object>)new RouteValueDictionary(htmlAttributes), true);
             return string.Empty;
         }
 
         public static string Table<TModel>(this HtmlHelper htmlHelper, IEnumerable<TModel> collection,
             Action<IDataTableConfiguration<TModel>> columns, IDictionary<string, object> htmlAttributes)
         {
-            TableWriter.Writer<TModel>(htmlHelper, collection, columns, htmlAttributes);
+            TableWriter.Writer<TModel>(htmlHelper, collection, columns, htmlAttributes, true);
             return string.Empty;
         }
 

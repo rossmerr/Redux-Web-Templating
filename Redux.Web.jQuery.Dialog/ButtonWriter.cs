@@ -32,6 +32,11 @@ namespace Redux.Web.jQuery.Dialog
                         sb.AppendLine(string.Format("{1}: '{0}', ", btn.TargetInternal, Resources.Form.Target));
                     }
 
+                    if (!string.IsNullOrEmpty(btn.BeforeSerializeInternal))
+                    {
+                        sb.AppendLine(string.Format("{1}: {0}, ", btn.BeforeSerializeInternal, Resources.Form.BeforeSerialize));
+                    }
+
                     if (!string.IsNullOrEmpty(btn.BeforeSubmitInternal))
                     {
                         sb.AppendLine(string.Format("{1}: {0}, ", btn.BeforeSubmitInternal, Resources.Form.BeforeSubmit));

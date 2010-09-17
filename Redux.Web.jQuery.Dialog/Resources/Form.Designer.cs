@@ -61,6 +61,15 @@ namespace Redux.Web.jQuery.Dialog.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to beforeSerialize.
+        /// </summary>
+        internal static string BeforeSerialize {
+            get {
+                return ResourceManager.GetString("BeforeSerialize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to beforeSubmit.
         /// </summary>
         internal static string BeforeSubmit {
