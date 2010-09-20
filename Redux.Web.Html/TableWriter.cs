@@ -97,6 +97,11 @@ namespace Redux.Web.Html
             {
                 var bRow = new TagBuilder("tr");
 
+                if (delegates.Count() > 0)
+                {
+                    bRow.MergeAttribute("id", "row" + delegates.First().DynamicInvoke(row));
+                }
+
                 var sbData = new StringBuilder();
 
                 foreach (var dlgText in delegates)

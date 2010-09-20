@@ -28,8 +28,9 @@
 
     <%= Html.Flexigrid<TestObject>(Model, columns =>
                                         {
+                                            columns.AddColumn(p => p.Two).IsVisible(false);
                                             columns.AddColumn(p => p.One).Width(150).Sortable(true);
-                                            columns.AddColumn(p => p.Two);
+                                           
                                         }).UsePager().UseRp(false).ShowTableToggleBtn().Width(500).Height(100).Title("test")%>
 
 
