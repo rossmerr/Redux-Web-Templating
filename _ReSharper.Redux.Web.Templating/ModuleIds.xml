@@ -1,7 +1,0 @@
-<Modules>
-  <Module PersistentId="816B6CCE-75B5-446E-A648-F21B974E58B7" ModuleId="Redux.Web.Templating" />
-  <Module PersistentId="480D4314-462A-4D9A-97B8-CE02F5C919E5" ModuleId="Redux.Web.jQuery.Flexigrid" />
-  <Module PersistentId="A5C6F950-2084-4482-9A0F-62A1B38DA64C" ModuleId="Redux.Web.jQuery.Text" />
-  <Module PersistentId="5C801840-C1F1-46FC-84BD-EA52F7BFB9E8" ModuleId="Redux.Web.Html" />
-  <Module PersistentId="0C93AD1E-5DD8-4996-BB68-4C0572EC477E" ModuleId="Redux.Web.jQuery.Jeditable" />
-</Modules>

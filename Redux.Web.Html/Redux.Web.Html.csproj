@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Column.cs" />
+    <Compile Include="SelectWriter.cs" />
     <Compile Include="DataTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TableExtension.cs" />

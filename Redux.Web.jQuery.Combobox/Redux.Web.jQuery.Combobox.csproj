@@ -54,6 +54,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Redux.Web.Html\Redux.Web.Html.csproj">
+      <Project>{5C801840-C1F1-46FC-84BD-EA52F7BFB9E8}</Project>
+      <Name>Redux.Web.Html</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Redux.Web.Templating\Redux.Web.Templating.csproj">
       <Project>{816B6CCE-75B5-446E-A648-F21B974E58B7}</Project>
       <Name>Redux.Web.Templating</Name>

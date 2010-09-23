@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Web.Mvc;
 using System.Web.Mvc.Html;
+using Redux.Web.Html;
 using Redux.Web.Templating;
 
 namespace Redux.Web.jQuery.Combobox
@@ -13,7 +14,7 @@ namespace Redux.Web.jQuery.Combobox
     {
         public static string Combobox(this HtmlHelper htmlHelper, string name, IEnumerable<SelectListItem> collection)
         {
-            htmlHelper.ViewContext.Writer.WriteLine(htmlHelper.DropDownList(name, collection));
+            SelectWriter.Writer(htmlHelper, collection, new { Name = name, id = name });
             ComboboxWriter.Writer(htmlHelper, name);
             return string.Empty;
         }
@@ -24,9 +25,8 @@ namespace Redux.Web.jQuery.Combobox
             var name = ExpressionHelper.GetExpressionText(expression);
             name = htmlHelper.ViewContext.ViewData.TemplateInfo.GetFullHtmlFieldName(name);
             name = Identifier.GenerateId(name);
-
-            
-            htmlHelper.ViewContext.Writer.WriteLine(htmlHelper.DropDownList(name, collection));
+           
+            SelectWriter.Writer(htmlHelper, collection, new {Name = name, id = name});
             ComboboxWriter.Writer(htmlHelper, name);
             return string.Empty;
         }
