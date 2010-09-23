@@ -134,6 +134,26 @@ namespace Redux.Web.jQuery.Text.Controllers
             return cell.ToString();
         }
 
+        public ActionResult Combobox()
+        {
+            var obj = new ComboboxModel
+                          {
+                              ListOne = new List<SelectListItem>()
+                                            {
+                                                new SelectListItem() {Text = "test", Value = "1", Selected = false}
+                                            },
+
+                              ListTwo = new List<SelectListItem>()
+                                            {
+                                                new SelectListItem() {Text = "test1", Value = "1"},
+                                                new SelectListItem() {Text = "test2", Value = "2"}
+                                            }
+                          };
+
+            return View(obj);
+        }
+
+
         public ActionResult Index()
         {
 

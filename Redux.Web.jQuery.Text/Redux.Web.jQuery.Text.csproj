@@ -71,6 +71,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\ComboboxModel.cs" />
     <Compile Include="Models\TestObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -93,6 +94,7 @@
     <Content Include="Scripts\flexigrid.js" />
     <Content Include="Scripts\jquery-ui-1.8.4.custom.min.js" />
     <Content Include="Scripts\jquery.jeditable.js" />
+    <Content Include="Views\Home\Combobox.aspx" />
     <Content Include="Views\Home\Example2.aspx" />
     <Content Include="Views\Home\Example1.aspx" />
     <Content Include="Views\Home\Example3.aspx" />
@@ -141,6 +143,10 @@
     <ProjectReference Include="..\Redux.Web.Html\Redux.Web.Html.csproj">
       <Project>{5C801840-C1F1-46FC-84BD-EA52F7BFB9E8}</Project>
       <Name>Redux.Web.Html</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Redux.Web.jQuery.Combobox\Redux.Web.jQuery.Combobox.csproj">
+      <Project>{7651184F-D486-48DF-8462-4880C4AA3EFE}</Project>
+      <Name>Redux.Web.jQuery.Combobox</Name>
     </ProjectReference>
     <ProjectReference Include="..\Redux.Web.jQuery.Dialog\Redux.Web.jQuery.Dialog.csproj">
       <Project>{0CF37356-77AC-4250-8DB2-5CB4A553A1BE}</Project>

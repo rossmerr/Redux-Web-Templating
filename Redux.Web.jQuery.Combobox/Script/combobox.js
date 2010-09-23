@@ -30,12 +30,11 @@
 					    },
 					    select: function (event, ui) {
 					        ui.item.option.selected = true;
-					        //select.val( ui.item.option.value );
+
 					        self._trigger("selected", event, {
 					            item: ui.item.option
 					        });
-					    },
-					    change: function (event, ui) {
+
 					        if (!ui.item) {
 					            var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex($(this).val()) + "$", "i"),
 									valid = false;
@@ -52,6 +51,7 @@
 					                return false;
 					            }
 					        }
+					        select.change();
 					    }
 					})
 					.addClass("ui-widget ui-widget-content ui-corner-left");
