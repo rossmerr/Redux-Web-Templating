@@ -24,7 +24,7 @@ namespace Redux.Web.jQuery.SmartTextBox
         public bool? HideEmptyInputsInternal { get; protected set; }
         public bool? EditOnFocusInternal { get; protected set; }
         public bool? EditOnDoubleClickInternal { get; protected set; }
-        public List<int> SubmitKeysInternal { get; protected set; }
+        public List<char> SubmitKeysInternal { get; protected set; }
         public List<char> SubmitCharsInternal { get; protected set; }
         public string ContainerClassInternal { get; protected set; }
         public char? SeparatorInternal { get; protected set; }
@@ -147,7 +147,7 @@ namespace Redux.Web.jQuery.SmartTextBox
             return this;
         }
 
-        public ISmartTextBoxConfiguration<TModel> SubmitKeys(params int[] value)
+        public ISmartTextBoxConfiguration<TModel> SubmitKeys(params char[] value)
         {
             SubmitKeysInternal = value.ToList();
             return this;

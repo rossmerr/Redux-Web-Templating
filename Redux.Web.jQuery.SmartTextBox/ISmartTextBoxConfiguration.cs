@@ -26,7 +26,7 @@ namespace Redux.Web.jQuery.SmartTextBox
         ISmartTextBoxConfiguration<TModel> HideEmptyInputs(bool value);
         ISmartTextBoxConfiguration<TModel> EditOnFocus(bool value);
         ISmartTextBoxConfiguration<TModel> EditOnDoubleClick(bool value);
-        ISmartTextBoxConfiguration<TModel> SubmitKeys(params int[] value);
+        ISmartTextBoxConfiguration<TModel> SubmitKeys(params char[] value);
         ISmartTextBoxConfiguration<TModel> SubmitChars(params char[] value);
         ISmartTextBoxConfiguration<TModel> ContainerClass(string value);
         ISmartTextBoxConfiguration<TModel> Separator(char value);

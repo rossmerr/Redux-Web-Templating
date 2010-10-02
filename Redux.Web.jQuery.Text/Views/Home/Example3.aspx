@@ -15,8 +15,8 @@
 
     <h2>Example3</h2>
 
-    <%= Html.SmartTextBoxFor(p => p.One).SubmitChars(',').AutocompleteUrl(new { Controller = "Home", Action = "Example3Json" }).OnlyAutocomplete(true)%>
-
+    <%= Html.SmartTextBoxFor(p => p.One).SubmitChars(',').AutocompleteUrl(new { Controller = "Home", Action = "Example3Json" }).SubmitKeys('9')%>
+    <input type="text" name="tret" />
 
 
 </asp:Content>

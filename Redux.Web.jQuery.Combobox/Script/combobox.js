@@ -85,7 +85,7 @@
 					    // pass empty string as value to search for, displaying all results
 					    input.autocomplete("search", "");
 					    input.focus();
-					});
+					}).css("padding", 0);
         }
     });
 })(jQuery);
