@@ -13,7 +13,8 @@ namespace Redux.Web.jQuery.Dialog
 
         public IList<IButtonSeparator> GetButtons()
         {
-            return buttons.ToList<IButtonSeparator>();
+            //return buttons.ToList<IButtonSeparator>();
+            return buttons.Cast<IButtonSeparator>().ToList(); // ToList<IButtonSeparator>();
 
         }
 
