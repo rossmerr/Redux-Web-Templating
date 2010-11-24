@@ -207,6 +207,12 @@ namespace Redux.Web.jQuery.Flexigrid
             if (flexigridConfiguration.RpInternal.HasValue)
                 optionsArray.WriteLine(Resources.Options.RP, flexigridConfiguration.RpInternal.Value.ToString(), RenderArrayMode.Comma);
 
+            if (flexigridConfiguration.PageInteral.HasValue)
+                optionsArray.WriteLine(Resources.Options.Page, flexigridConfiguration.PageInteral.Value.ToString(), RenderArrayMode.Comma);
+
+            if (flexigridConfiguration.ShowToggleBtnInternal.HasValue)
+                optionsArray.WriteLine(Resources.Options.ShowToggleBtn, flexigridConfiguration.ShowToggleBtnInternal.Value.ToString().ToLower(), RenderArrayMode.Comma);
+
             if (flexigridConfiguration.ShowTableToggleBtnInternal.HasValue)
                 optionsArray.WriteLine(Resources.Options.ShowTableToggleButton, flexigridConfiguration.ShowTableToggleBtnInternal.Value.ToString().ToLower(), RenderArrayMode.Comma);
 

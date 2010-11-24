@@ -178,6 +178,15 @@ namespace Redux.Web.jQuery.Flexigrid.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to page.
+        /// </summary>
+        internal static string Page {
+            get {
+                return ResourceManager.GetString("Page", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to rp.
         /// </summary>
         internal static string RP {
@@ -210,6 +219,15 @@ namespace Redux.Web.jQuery.Flexigrid.Resources {
         internal static string ShowTableToggleButton {
             get {
                 return ResourceManager.GetString("ShowTableToggleButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to showToggleBtn.
+        /// </summary>
+        internal static string ShowToggleBtn {
+            get {
+                return ResourceManager.GetString("ShowToggleBtn", resourceCulture);
             }
         }
         

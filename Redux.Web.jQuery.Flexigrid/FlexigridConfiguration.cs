@@ -30,7 +30,8 @@ namespace Redux.Web.jQuery.Flexigrid
         public bool? UseRpInternal { get; protected set; }
         public int? RpInternal { get; protected set; }
         public string TitleInternal { get; protected set;  }
-
+        public int? PageInteral { get; protected set; }
+        public bool? ShowToggleBtnInternal { get; protected set; }
         public string Target { get; protected set; }
 
 
@@ -138,6 +139,18 @@ namespace Redux.Web.jQuery.Flexigrid
         public IFlexigridConfiguration<TModel> DataType(DataType dataType)
         {
             DataTypeInternal = dataType;
+            return this;
+        }
+
+        public IFlexigridConfiguration<TModel> Page(int value)
+        {
+            PageInteral = value;
+            return this;
+        }
+
+        public IFlexigridConfiguration<TModel> ShowToggleBtn(bool value)
+        {
+            ShowToggleBtnInternal = value;
             return this;
         }
 

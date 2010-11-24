@@ -31,6 +31,10 @@ namespace Redux.Web.jQuery.Flexigrid
 
         IFlexigridConfiguration<TModel> Title(string title);
 
-        IFlexigridConfiguration<TModel> DataType(DataType dataType);        
+        IFlexigridConfiguration<TModel> DataType(DataType dataType);
+
+        IFlexigridConfiguration<TModel> Page(int value);
+
+        IFlexigridConfiguration<TModel> ShowToggleBtn(bool value);
     }
 }
