@@ -33,7 +33,14 @@ namespace Redux.Web.jQuery.Flexigrid
         public int? PageInteral { get; protected set; }
         public bool? ShowToggleBtnInternal { get; protected set; }
         public string Target { get; protected set; }
-
+        public string OnDragColInternal { get; protected set; }
+        public string OnToggleColInternal { get; protected set; }
+        public string OnChangeSortInternal { get; protected set; }
+        public string OnSuccessInternal { get; protected set; }
+        public string OnErrorInternal { get; protected set; }
+        public string OnSubmitInteral { get; protected set; }
+        public string OnReloadInternal { get; protected set; }
+        public string OnLoadedInternal { get; protected set; }
 
         protected HtmlHelper _htmlHelper { get; set; }
 
@@ -151,6 +158,55 @@ namespace Redux.Web.jQuery.Flexigrid
         public IFlexigridConfiguration<TModel> ShowToggleBtn(bool value)
         {
             ShowToggleBtnInternal = value;
+            return this;
+        }
+
+        public IFlexigridConfiguration<TModel> OnDragCol(string title)
+        {
+            OnDragColInternal = title;
+            return this;
+                 
+        }
+
+        public IFlexigridConfiguration<TModel> OnToggleCol(string title)
+        {
+            OnToggleColInternal = title;
+            return this;
+        }
+
+        public IFlexigridConfiguration<TModel> OnChangeSort(string title)
+        {
+            OnChangeSortInternal = title;
+            return this;
+        }
+
+        public IFlexigridConfiguration<TModel> OnSuccess(string title)
+        {
+            OnSuccessInternal = title;
+            return this;
+        }
+
+        public IFlexigridConfiguration<TModel> OnError(string title)
+        {
+            OnErrorInternal = title;
+            return this;
+        }
+
+        public IFlexigridConfiguration<TModel> OnSubmit(string title)
+        {
+            OnSubmitInteral = title;
+            return this;
+        }
+
+        public IFlexigridConfiguration<TModel> OnLoaded(string title)
+        {
+            OnLoadedInternal = title;
+            return this;
+        }
+
+        public IFlexigridConfiguration<TModel> OnReloaded(string title)
+        {
+            OnReloadInternal = title;
             return this;
         }
 

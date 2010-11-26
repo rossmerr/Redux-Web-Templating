@@ -169,11 +169,83 @@ namespace Redux.Web.jQuery.Flexigrid.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to onChangeSort.
+        /// </summary>
+        internal static string OnChangeSort {
+            get {
+                return ResourceManager.GetString("OnChangeSort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to onDragCol.
+        /// </summary>
+        internal static string OnDragCol {
+            get {
+                return ResourceManager.GetString("OnDragCol", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to onError.
+        /// </summary>
+        internal static string OnError {
+            get {
+                return ResourceManager.GetString("OnError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to onLoaded.
+        /// </summary>
+        internal static string OnLoaded {
+            get {
+                return ResourceManager.GetString("OnLoaded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to onpress.
         /// </summary>
         internal static string OnPressCallback {
             get {
                 return ResourceManager.GetString("OnPressCallback", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to onReload.
+        /// </summary>
+        internal static string OnReload {
+            get {
+                return ResourceManager.GetString("OnReload", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to onSubmit.
+        /// </summary>
+        internal static string OnSubmit {
+            get {
+                return ResourceManager.GetString("OnSubmit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to onSuccess.
+        /// </summary>
+        internal static string OnSuccess {
+            get {
+                return ResourceManager.GetString("OnSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to onToggleCol.
+        /// </summary>
+        internal static string OnToggleCol {
+            get {
+                return ResourceManager.GetString("OnToggleCol", resourceCulture);
             }
         }
         

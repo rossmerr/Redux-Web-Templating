@@ -201,4 +201,28 @@
   <data name="ShowToggleBtn" xml:space="preserve">
     <value>showToggleBtn</value>
   </data>
+  <data name="OnChangeSort" xml:space="preserve">
+    <value>onChangeSort</value>
+  </data>
+  <data name="OnDragCol" xml:space="preserve">
+    <value>onDragCol</value>
+  </data>
+  <data name="OnError" xml:space="preserve">
+    <value>onError</value>
+  </data>
+  <data name="OnLoaded" xml:space="preserve">
+    <value>onLoaded</value>
+  </data>
+  <data name="OnReload" xml:space="preserve">
+    <value>onReload</value>
+  </data>
+  <data name="OnSubmit" xml:space="preserve">
+    <value>onSubmit</value>
+  </data>
+  <data name="OnSuccess" xml:space="preserve">
+    <value>onSuccess</value>
+  </data>
+  <data name="OnToggleCol" xml:space="preserve">
+    <value>onToggleCol</value>
+  </data>
 </root>

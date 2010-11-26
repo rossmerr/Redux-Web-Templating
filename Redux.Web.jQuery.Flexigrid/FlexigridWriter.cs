@@ -189,6 +189,30 @@ namespace Redux.Web.jQuery.Flexigrid
 
         private static void WriteOptions<TModel>(ScriptArray optionsArray, FlexigridConfiguration<TModel> flexigridConfiguration)
         {
+            if (!string.IsNullOrEmpty(flexigridConfiguration.OnChangeSortInternal))
+                optionsArray.WriteLine(Resources.Options.OnChangeSort, flexigridConfiguration.OnChangeSortInternal, RenderArrayMode.Comma);
+
+            if (!string.IsNullOrEmpty(flexigridConfiguration.OnDragColInternal))
+                optionsArray.WriteLine(Resources.Options.OnDragCol, flexigridConfiguration.OnDragColInternal, RenderArrayMode.Comma);
+
+            if (!string.IsNullOrEmpty(flexigridConfiguration.OnErrorInternal))
+                optionsArray.WriteLine(Resources.Options.OnError, flexigridConfiguration.OnErrorInternal, RenderArrayMode.Comma);
+
+            if (!string.IsNullOrEmpty(flexigridConfiguration.OnLoadedInternal))
+                optionsArray.WriteLine(Resources.Options.OnLoaded, flexigridConfiguration.OnLoadedInternal, RenderArrayMode.Comma);
+
+            if (!string.IsNullOrEmpty(flexigridConfiguration.OnReloadInternal))
+                optionsArray.WriteLine(Resources.Options.OnReload, flexigridConfiguration.OnReloadInternal, RenderArrayMode.Comma);
+
+            if (!string.IsNullOrEmpty(flexigridConfiguration.OnSubmitInteral))
+                optionsArray.WriteLine(Resources.Options.OnSubmit, flexigridConfiguration.OnSubmitInteral, RenderArrayMode.Comma);
+
+            if (!string.IsNullOrEmpty(flexigridConfiguration.OnSuccessInternal))
+                optionsArray.WriteLine(Resources.Options.OnSuccess, flexigridConfiguration.OnSuccessInternal, RenderArrayMode.Comma);
+
+            if (!string.IsNullOrEmpty(flexigridConfiguration.OnToggleColInternal))
+                optionsArray.WriteLine(Resources.Options.OnToggleCol, flexigridConfiguration.OnToggleColInternal, RenderArrayMode.Comma);
+
             if (!string.IsNullOrEmpty(flexigridConfiguration.UrlInternal))
                 optionsArray.WriteLine(Resources.Options.Url, string.Format("'{0}'", flexigridConfiguration.UrlInternal), RenderArrayMode.Comma);
 

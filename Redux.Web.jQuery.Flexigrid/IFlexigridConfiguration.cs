@@ -36,5 +36,14 @@ namespace Redux.Web.jQuery.Flexigrid
         IFlexigridConfiguration<TModel> Page(int value);
 
         IFlexigridConfiguration<TModel> ShowToggleBtn(bool value);
+
+        IFlexigridConfiguration<TModel> OnDragCol(string title);
+        IFlexigridConfiguration<TModel> OnToggleCol(string title);
+        IFlexigridConfiguration<TModel> OnChangeSort(string title);
+        IFlexigridConfiguration<TModel> OnSuccess(string title);
+        IFlexigridConfiguration<TModel> OnError(string title);
+        IFlexigridConfiguration<TModel> OnSubmit(string title);
+        IFlexigridConfiguration<TModel> OnLoaded(string title);
+        IFlexigridConfiguration<TModel> OnReloaded(string title);
     }
 }
