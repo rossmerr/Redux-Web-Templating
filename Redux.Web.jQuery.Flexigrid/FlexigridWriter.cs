@@ -150,6 +150,8 @@ namespace Redux.Web.jQuery.Flexigrid
                                 }
                             }
                         }
+
+                        optionsArray.WriteLine(",");
                     }
 
                     if (flexigridConfiguration.SortInternal != null)

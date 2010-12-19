@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<Redux.Web.jQuery.Text.Models.TestObject>>" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<System.Collections.Generic.List<Redux.Web.jQuery.Text.Models.TestObject>>" %>
 <%@ Import Namespace="Redux.Web.jQuery.Text.Models" %>
 <%@ Import Namespace="Redux.Web.Templating" %>
 <%@ Import Namespace="Redux.Web.jQuery.Jeditable" %>
@@ -39,4 +39,15 @@
                                             columns.AddColumn(p => p.One).Width(150).Sortable(true);
                                             columns.AddColumn(p => p.Two);
                                         }).UsePager().UseRp(false).ShowTableToggleBtn().Width(500).Height(100).Title("test").DataType(Redux.Web.Templating.DataType.Json)%>
+
+
+    <%= Html.Flexigrid<TestObject>(Model, columns =>
+                                        {
+                                            columns.AddColumn(p => p.One).Width(150).Sortable(true);
+                                            columns.AddColumn(p => p.Two);
+                                        }).SearchItems(search =>
+                                                           {
+                                                               search.AddField(p => p.One, "test");
+                                                           })
+                                        .UsePager().UseRp(false).ShowTableToggleBtn().Width(500).Height(100).Title("test").DataType(Redux.Web.Templating.DataType.Json)%>
 </asp:Content>
